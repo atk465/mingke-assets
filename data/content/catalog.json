@@ -1,5 +1,5 @@
 {
-  "$comment": "《铭刻录》正式内容包 catalog —— 装备/道具/技能池暂沿用通用小样，CDN 收编延后至 2.9.x",
+  "$comment": "《铭刻录》正式内容包 catalog —— cardPool 为开局购卡目录（白铁10/青铜20/白银40/鎏金80/星辉160 点计价）；装备/道具/技能旧池已随卡牌化退役",
   "version": 1,
   "equipmentPool": [
     {
@@ -403,6 +403,218 @@
           ]
         }
       ]
+    }
+  ],
+  "cardPool": [
+    {
+      "id": "eq_yayu",
+      "name": "鸦羽轻铠",
+      "cardTier": "白铁",
+      "formEntry": "装备",
+      "description": "以鸦羽织就的轻铠，铭着「不坠」。每拍加持。",
+      "cost": 10,
+      "element": "金"
+    },
+    {
+      "id": "eq_panshi",
+      "name": "磐石臂铠",
+      "cardTier": "青铜",
+      "formEntry": "装备",
+      "description": "矿工们供出来的臂铠，铭是三行「站住」。",
+      "cost": 20,
+      "element": "土"
+    },
+    {
+      "id": "eq_denglong",
+      "name": "引路人的提灯",
+      "cardTier": "白铁",
+      "formEntry": "装备",
+      "description": "官方道里程碑同款铭样，照亮且被记住。",
+      "cost": 10,
+      "element": "光"
+    },
+    {
+      "id": "eq_weiyu",
+      "name": "铭盾「未雨」",
+      "cardTier": "白银",
+      "formEntry": "装备",
+      "description": "写在前面的防备。盾面总是湿的，没人知道为什么。",
+      "cost": 40,
+      "element": "水"
+    },
+    {
+      "id": "eq_fusi",
+      "name": "缚丝护腕",
+      "cardTier": "青铜",
+      "formEntry": "装备",
+      "description": "蛛族丝巢的手艺，腕上缠的其实是看得见的铭。",
+      "cost": 20,
+      "element": "暗"
+    },
+    {
+      "id": "eq_kuanggao",
+      "name": "灰笺矿镐",
+      "cardTier": "白铁",
+      "formEntry": "装备",
+      "description": "灰笺矿脉的制式镐，对石头格外讲道理。",
+      "cost": 10,
+      "element": "土"
+    },
+    {
+      "id": "sk_huozhe",
+      "name": "火折子",
+      "cardTier": "白铁",
+      "formEntry": "技能",
+      "description": "把一炉火折进一行字里的老手艺。",
+      "cost": 10,
+      "element": "火"
+    },
+    {
+      "id": "sk_jingshui",
+      "name": "静水诀",
+      "cardTier": "青铜",
+      "formEntry": "技能",
+      "description": "让一段铭文安静下来。消耗卡。",
+      "cost": 20,
+      "element": "水"
+    },
+    {
+      "id": "sk_leiyin",
+      "name": "雷引·一线",
+      "cardTier": "白银",
+      "formEntry": "技能",
+      "description": "从天到地只写了一笔。消耗卡，贵在准头。",
+      "cost": 40,
+      "element": "雷"
+    },
+    {
+      "id": "sk_sifu",
+      "name": "丝缚术",
+      "cardTier": "青铜",
+      "formEntry": "技能",
+      "description": "蛛族老姆妈们的必修课。消耗卡。",
+      "cost": 20,
+      "element": "暗"
+    },
+    {
+      "id": "sk_yongjin",
+      "name": "咏金调",
+      "cardTier": "白铁",
+      "formEntry": "技能",
+      "description": "一段押韵的短调，唱给卡听。",
+      "cost": 10,
+      "element": "金"
+    },
+    {
+      "id": "sk_huijin",
+      "name": "灰烬回望",
+      "cardTier": "青铜",
+      "formEntry": "技能",
+      "description": "灭铭之战的余烬里学会的一瞥。消耗卡。",
+      "cost": 20,
+      "element": "火"
+    },
+    {
+      "id": "ld_zhuoan",
+      "name": "灼岸",
+      "cardTier": "青铜",
+      "formEntry": "领域",
+      "description": "一段被烤热的河岸，持久环境。",
+      "cost": 20,
+      "element": "火"
+    },
+    {
+      "id": "ld_wuxiang",
+      "name": "雾巷",
+      "cardTier": "青铜",
+      "formEntry": "领域",
+      "description": "诺瓦城最有名的迷路地点，现已成卡。",
+      "cost": 20,
+      "element": "水"
+    },
+    {
+      "id": "ld_panshi",
+      "name": "磐石门槛",
+      "cardTier": "白银",
+      "formEntry": "领域",
+      "description": "跨过去就要守约的门槛。",
+      "cost": 40,
+      "element": "土"
+    },
+    {
+      "id": "ld_dengshi",
+      "name": "灯市夜话",
+      "cardTier": "白铁",
+      "formEntry": "领域",
+      "description": "艾瑟嘉德灯市的一角，听故事的人越多越亮。",
+      "cost": 10,
+      "element": "光"
+    },
+    {
+      "id": "ld_nifeng",
+      "name": "逆风走廊",
+      "cardTier": "青铜",
+      "formEntry": "领域",
+      "description": "风从对面来，箭也从对面来。",
+      "cost": 20,
+      "element": "风"
+    },
+    {
+      "id": "ld_chenmo",
+      "name": "沉默铁砧",
+      "cardTier": "白银",
+      "formEntry": "领域",
+      "description": "卡匠行会的祖砧，落锤之前世界先安静。",
+      "cost": 40,
+      "element": "金"
+    },
+    {
+      "id": "su_bidai",
+      "name": "帝冕币袋",
+      "cardTier": "白铁",
+      "formEntry": "物资",
+      "description": "一小袋铸着铭冕纹的币。打出即折算。",
+      "cost": 10
+    },
+    {
+      "id": "su_ganliang",
+      "name": "干粮定数",
+      "cardTier": "白铁",
+      "formEntry": "物资",
+      "description": "三天的口粮，一张卡管饱。",
+      "cost": 10
+    },
+    {
+      "id": "su_mingshi",
+      "name": "铭石碎料包",
+      "cardTier": "青铜",
+      "formEntry": "物资",
+      "description": "灰笺矿脉的边角料，卡匠见了眼亮。",
+      "cost": 20
+    },
+    {
+      "id": "su_yizhan",
+      "name": "驿站通行签",
+      "cardTier": "白铁",
+      "formEntry": "物资",
+      "description": "官道驿站的加急签，写着「勿拦」。",
+      "cost": 10
+    },
+    {
+      "id": "su_yaogao",
+      "name": "疗伤药膏卡",
+      "cardTier": "青铜",
+      "formEntry": "物资",
+      "description": "药剂师行会的标准品，撕开即用。",
+      "cost": 20
+    },
+    {
+      "id": "su_gongju",
+      "name": "卡匠工具组",
+      "cardTier": "青铜",
+      "formEntry": "物资",
+      "description": "小篆同款。修卡补铭，随身一套。",
+      "cost": 20
     }
   ]
 }
