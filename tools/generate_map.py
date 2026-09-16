@@ -373,7 +373,7 @@ def main():
     # 轻噪声肌理 + 柔化
     base = (base.astype(np.int16) + ((np_rng.random_sample((H, W, 3)) - 0.5) * 14).astype(np.int16)).clip(0, 255).astype(np.uint8)
     bimg = Image.fromarray(base, 'RGB').filter(ImageFilter.GaussianBlur(1.2))
-    bimg.save('data/content/base-map.png', optimize=True)
+    bimg.save('data/content/base-map-procedural.png', optimize=True)  # 程序化底图为备用图源，不覆盖 AI 手绘版
 
     # ═══ 自检报告 ═══
     land_ids = {i + 1 for i, t in enumerate(TILES) if not t['water']}

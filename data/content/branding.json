@@ -31,9 +31,14 @@
   ],
   "mapSources": [
     {
-      "key": "main",
-      "name": "铭刻大陆全图",
+      "key": "art",
+      "name": "铭刻大陆·手绘",
       "url": "/data/content/base-map.png"
+    },
+    {
+      "key": "procedural",
+      "name": "铭刻大陆·程序化",
+      "url": "/data/content/base-map-procedural.png"
     }
   ],
   "workshopApiBase": "",
