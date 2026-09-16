@@ -1,0 +1,38 @@
+{
+  "id": "dlc",
+  "name": "《未刊章》",
+  "partition": "dlc",
+  "description": "预留的扩展钩子，默认不启用。",
+  "builtIn": true,
+  "entries": [
+    {
+      "uid": 1,
+      "name": "契约之路",
+      "content": "<契约之路·未刊>\n与铭灵缔结长久誓约的正式仪轨：三问、一诺、同书一名。缔约后铭灵不再是「卡里请来的」，而是与持有者共占一行铭。\n此章为「伙伴契约」玩法预留，启用前不主动触发。\n</契约之路·未刊>",
+      "enabled": true,
+      "constant": false,
+      "key": [
+        "契约"
+      ],
+      "keysecondary": [],
+      "selectiveLogic": 0,
+      "order": 10,
+      "position": 0
+    },
+    {
+      "uid": 2,
+      "name": "铭灵婚约",
+      "content": "<铭灵婚约·未刊>\n共鸣的尽头。传说里有持有者与铭灵把两条名字并排写进底石——此后她们的伤共担，寿数共算。\n铭法院对此没有条律，只有一页空白的登记格式，和一句老书记的批注：「此事不归我们管，归底石管。」\n此章为远期叙事预留，启用前不主动触发。\n</铭灵婚约·未刊>",
+      "enabled": true,
+      "constant": false,
+      "key": [
+        "婚约",
+        "铭灵"
+      ],
+      "keysecondary": [],
+      "selectiveLogic": 0,
+      "order": 11,
+      "position": 0
+    }
+  ]
+}

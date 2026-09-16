@@ -1,0 +1,35 @@
+{
+  "$comment": "《铭刻录》品牌面 —— era「铭刻」将盖章进新建存档（存档级只读）",
+  "appTitle": "铭刻录",
+  "shortName": "铭刻录",
+  "titleLines": [
+    "铭刻录"
+  ],
+  "tagline": "万物之力，皆可铭入一张卡。",
+  "subtitles": [
+    "铭灵显世 · 交锋即决",
+    "你的故事，是她们唯一能读到的小说"
+  ],
+  "credits": "《铭刻录》制作组 · fated_poem_independent_assets",
+  "worldSummary": "铭刻纪元：万物皆是世界底石上的铭文；文明把力量封进卡牌，把纷争交给交锋。铭灵显世皆为女性，追随持有者，因为你的故事是她们唯一能读到的小说。",
+  "about": "《铭刻录》——AI 叙事 × 卡牌交锋的独立作品。世界真源：fated_poem_independent_assets 内容仓。",
+  "copyright": "© 2026 铭刻录制作组",
+  "era": "铭刻",
+  "plotTemplate": [
+    {
+      "title": "第一年 — 序章：抵达",
+      "body": "主角以外来者身份落脚边境小镇，认识第一批本地人，摸清这片土地的规矩。"
+    },
+    {
+      "title": "第二年 — 转折：裂痕",
+      "body": "镇外林地出现异常，原本各行其是的几方势力被迫互相试探，主角被卷入其中。"
+    },
+    {
+      "title": "第三年 — 收束：抉择",
+      "body": "旧秩序难以为继，主角的选择决定这片边境往后由谁书写。"
+    }
+  ],
+  "mapSources": [],
+  "workshopApiBase": "",
+  "workshopLoginHint": ""
+}

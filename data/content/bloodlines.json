@@ -1,0 +1,217 @@
+{
+  "$comment": "《铭刻录》血脉集 —— id 与 statModifiers 与引擎逐字一致（属性加成/数值门/存档 bloodlineIds 依赖），仅 description 为铭刻化文案",
+  "human": {
+    "name": "人类",
+    "description": "分布最广的短寿种族，靠读书、拜师与抽封铭卡在铭的世界里硬闯出一条路"
+  },
+  "elf": {
+    "name": "精灵",
+    "description": "风之铭的嫡裔，寿数以百年计，把承诺看得比命重",
+    "statModifiers": {
+      "dex": 2,
+      "int": 1
+    }
+  },
+  "dwarf": {
+    "name": "矮人",
+    "description": "山与铁之铭的守护者，把誓言刻进须发，锻造世家的火印千金不换",
+    "statModifiers": {
+      "con": 2,
+      "str": 1
+    }
+  },
+  "winged": {
+    "name": "翼民",
+    "description": "背生羽翼的高地种，视誓约为第二组翅膀",
+    "statModifiers": {
+      "dex": 2,
+      "spi": 1
+    }
+  },
+  "merfolk": {
+    "name": "人鱼",
+    "description": "浅海商语与深海沉歌两支的人鱼种，水路贸易的把持者",
+    "statModifiers": {
+      "int": 2,
+      "spi": 1
+    }
+  },
+  "halfling": {
+    "name": "半身人",
+    "description": "身量矮小的城镇种，手巧健谈，行会的账房多出自她们",
+    "statModifiers": {
+      "dex": 2,
+      "int": 1
+    }
+  },
+  "beast": {
+    "name": "兽族",
+    "description": "兽裔铭灵显世皆作兽娘之形，部落聚居，感官远胜常人",
+    "statModifiers": {
+      "str": 1,
+      "dex": 2
+    }
+  },
+  "centaur": {
+    "name": "半人马",
+    "description": "平原游牧种，以速度与骑射见长，商路上的活地图",
+    "statModifiers": {
+      "str": 2,
+      "dex": 1
+    }
+  },
+  "vampire": {
+    "name": "血族",
+    "description": "以血续铭的不死长生种，畏惧日光，恩义与债务分得极清",
+    "statModifiers": {
+      "dex": 2,
+      "con": -1,
+      "spi": 2
+    }
+  },
+  "undead": {
+    "name": "不死生物",
+    "description": "越过生死界限的存在，铭文未散，故记忆与执念也未必散",
+    "statModifiers": {
+      "con": -1,
+      "spi": 2
+    }
+  },
+  "dragonkin_north": {
+    "name": "北境龙裔",
+    "description": "承袭稀薄龙血的人形种，竖瞳，天生带着吐息的雏形",
+    "statModifiers": {
+      "str": 2,
+      "con": 2
+    }
+  },
+  "fairy_lightwing": {
+    "name": "光翅妖精",
+    "description": "巴掌大的自然精魂，透明羽翅，迷恋歌声与新奇故事",
+    "statModifiers": {
+      "int": 2,
+      "spi": 2
+    }
+  },
+  "slime": {
+    "name": "不定形生物",
+    "description": "凝胶状的拟形生命，显世时惯作圆润少女之态，分布极广",
+    "statModifiers": {
+      "con": 2
+    }
+  },
+  "wish_spirit": {
+    "name": "愿灵",
+    "description": "从集体祈愿与记忆中诞生的精魂，被记得越久存在越稳固",
+    "statModifiers": {
+      "spi": 3
+    }
+  },
+  "construct": {
+    "name": "构装体",
+    "description": "魔力驱动的造物，忠实执行造物者铭下的指令，一字不逾",
+    "statModifiers": {
+      "str": 2,
+      "con": 2
+    }
+  },
+  "plant_creature": {
+    "name": "植物生物",
+    "description": "获得意识的草木生命，对季节与土壤极敏感",
+    "statModifiers": {
+      "con": 2,
+      "spi": 1
+    }
+  },
+  "celestial": {
+    "name": "天族",
+    "description": "秩序侧的高位铭灵，正体书写，一笔一画按律条来",
+    "statModifiers": {
+      "spi": 2,
+      "int": 1
+    }
+  },
+  "demon": {
+    "name": "魔族",
+    "description": "混沌侧的高位铭灵，连笔书写，重契约的字面甚于其精神",
+    "statModifiers": {
+      "str": 2,
+      "spi": 1
+    }
+  },
+  "elemental": {
+    "name": "元素生物",
+    "description": "火水风土四种元素的具现体，显世皆作元素娘之形",
+    "statModifiers": {
+      "int": 2,
+      "spi": 1
+    }
+  },
+  "frost_giant": {
+    "name": "霜巨人",
+    "description": "极寒地带的巨躯种，耐寒，以兽皮与冰石为衣",
+    "statModifiers": {
+      "str": 3,
+      "con": 3
+    }
+  },
+  "true_dragon": {
+    "name": "巨龙",
+    "description": "四足双翼的元素吐息之主，寿数以千年计，极少现身人前",
+    "statModifiers": {
+      "str": 3,
+      "con": 3,
+      "int": 2,
+      "spi": 2
+    }
+  },
+  "ancient_dragon": {
+    "name": "古龙",
+    "description": "存在早于成文史的古龙，可化人形，没有固定的肉身",
+    "statModifiers": {
+      "str": 3,
+      "int": 3,
+      "spi": 3
+    }
+  },
+  "drake": {
+    "name": "亚龙",
+    "description": "龙血稀释后的旁支，体型中等，是中层冒险者的常客",
+    "statModifiers": {
+      "str": 2,
+      "con": 2
+    }
+  },
+  "insect": {
+    "name": "虫族",
+    "description": "虫巢铭阵的共生种，社群分工严明，悍不畏死的虫族战士由此而来",
+    "statModifiers": {
+      "con": 2,
+      "str": 1
+    }
+  },
+  "fungus": {
+    "name": "菌族",
+    "description": "孢子铭文共生的柔和种，孢子里藏着旧雨的记忆",
+    "statModifiers": {
+      "con": 1,
+      "spi": 1
+    }
+  },
+  "arachnid": {
+    "name": "蛛族",
+    "description": "蛛后（铭灵女王）的血裔，丝缚与毒铭冠绝一方",
+    "statModifiers": {
+      "dex": 2,
+      "int": 1
+    }
+  },
+  "crystal_lizard": {
+    "name": "晶蜥族",
+    "description": "铭石矿脉共生种，鳞甲晶透，可薄薄存储一段铭力",
+    "statModifiers": {
+      "con": 1,
+      "dex": 1
+    }
+  }
+}

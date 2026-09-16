@@ -1,0 +1,44 @@
+{
+  "$comment": "《铭刻录》静态委托板 —— requireCard 过滤玩家实体卡（minTier=CARD_TIERS / formEntry / elements / exactName）",
+  "defs": [
+    {
+      "name": "守备队的换装单",
+      "description": "艾瑟嘉德守备队在剿匪里折损了半数制式装备，公会代贴征用单：上好的装备卡，验卡入库即结账。",
+      "requireCard": {
+        "minTier": "白银",
+        "formEntry": "装备"
+      },
+      "rewards": {
+        "gc": 80,
+        "reputation": 5
+      }
+    },
+    {
+      "name": "命运祭坛的供卡",
+      "description": "命运祭坛的双月夜要换一批应季供卡，守誓人指名要火铭——「底石在冬天也想听听暖和的字」。",
+      "requireCard": {
+        "elements": [
+          "火"
+        ]
+      },
+      "rewards": {
+        "gc": 50,
+        "reputation": 3,
+        "materials": [
+          "封蜡"
+        ]
+      }
+    },
+    {
+      "name": "寻回「晨露」",
+      "description": "卡匠行会的一张传讯卡「晨露」连匣被窃。行会的火印册页上记着它——找回原卡，赏格从优；找到贼，赏格翻倍。",
+      "requireCard": {
+        "exactName": "晨露"
+      },
+      "rewards": {
+        "gc": 120,
+        "reputation": 8
+      }
+    }
+  ]
+}
