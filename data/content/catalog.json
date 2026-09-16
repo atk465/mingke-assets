@@ -1,5 +1,5 @@
 {
-  "$comment": "《铭刻录》正式内容包 catalog —— cardPool 为开局购卡目录（白铁10/青铜20/白银40/鎏金80/星辉160 点计价）；装备/道具/技能旧池已随卡牌化退役",
+  "$comment": "《铭刻录》正式内容包 catalog —— cardPool 含开局购卡目录（可购四类）与巨兽召唤池（召唤 8 张，首召实体化）；鎏金/星辉计价 80/160",
   "version": 1,
   "equipmentPool": [
     {
@@ -615,6 +615,110 @@
       "formEntry": "物资",
       "description": "小篆同款。修卡补铭，随身一套。",
       "cost": 20
+    },
+    {
+      "id": "sm_yanzhua",
+      "name": "远古巨兽·岩爪",
+      "cardTier": "鎏金",
+      "formEntry": "召唤",
+      "element": "土",
+      "description": "塌方垭口那声不响的巨掌，铭是三行「站住」。",
+      "cost": 200,
+      "companion": {
+        "race": "岩甲古龙裔",
+        "temperament": "寡言护主，蹲下时比站着高"
+      }
+    },
+    {
+      "id": "sm_yanmao",
+      "name": "焰鬃炎狮",
+      "cardTier": "鎏金",
+      "formEntry": "召唤",
+      "element": "火",
+      "description": "鬃毛是一炉没封好的火，跑起来像燎原走在前面。",
+      "cost": 200,
+      "companion": {
+        "race": "焰鬃狮族",
+        "temperament": "骄傲，认输但不认错"
+      }
+    },
+    {
+      "id": "sm_leijiao",
+      "name": "雷角麋王",
+      "cardTier": "鎏金",
+      "formEntry": "召唤",
+      "element": "雷",
+      "description": "角尖挑着一线雷，雨天格外暴躁。",
+      "cost": 200,
+      "companion": {
+        "race": "雷角麋族",
+        "temperament": "认第一声雷当娘"
+      }
+    },
+    {
+      "id": "sm_wuyuan",
+      "name": "雾渊鲛姬",
+      "cardTier": "星辉",
+      "formEntry": "召唤",
+      "element": "水",
+      "description": "深海沉歌者的远房，歌声能把战场泡进水里。",
+      "cost": 320,
+      "companion": {
+        "race": "沉歌鲛族",
+        "temperament": "三年说一句话，句句算数"
+      }
+    },
+    {
+      "id": "sm_shuangsi",
+      "name": "霜颸鹿后",
+      "cardTier": "星辉",
+      "formEntry": "召唤",
+      "element": "冰",
+      "description": "踏雪无痕的鹿群之后，呼吸结成霜花。",
+      "cost": 320,
+      "companion": {
+        "race": "霜颸鹿族",
+        "temperament": "温柔的固执，拦路时绝不侧身"
+      }
+    },
+    {
+      "id": "sm_panyuan",
+      "name": "磐垣龟皇",
+      "cardTier": "星辉",
+      "formEntry": "召唤",
+      "element": "土",
+      "description": "背甲上驮着一小段城墙的铭。",
+      "cost": 320,
+      "companion": {
+        "race": "磐垣龟族",
+        "temperament": "慢，但从不迟到"
+      }
+    },
+    {
+      "id": "sm_tieyu",
+      "name": "铁羽鹫",
+      "cardTier": "白银",
+      "formEntry": "召唤",
+      "element": "金",
+      "description": "翼尖淬金的猎鹫，新手制卡师的第一头巨兽。",
+      "cost": 40,
+      "companion": {
+        "race": "铁羽鹫族",
+        "temperament": "眼高手低，嘴上不服"
+      }
+    },
+    {
+      "id": "sm_junbao",
+      "name": "菌孢鹿",
+      "cardTier": "白银",
+      "formEntry": "召唤",
+      "element": "水",
+      "description": "鹿角上长着一茬菌孢，孢子落处森林让路。",
+      "cost": 40,
+      "companion": {
+        "race": "菌孢鹿族",
+        "temperament": "好奇心比体重重"
+      }
     }
   ]
 }
