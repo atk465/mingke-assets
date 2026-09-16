@@ -39,6 +39,49 @@
         "gc": 120,
         "reputation": 8
       }
+    },
+    {
+      "name": "孵房的接亲单",
+      "description": "晶蜥族的三只幼蜥在换季迁徙时走散，孵房贴出接亲单：沿途温言软语，把幼蜥们平安领回灰笺矿脉。",
+      "requireCard": {
+        "minTier": "青铜"
+      },
+      "rewards": {
+        "gc": 60,
+        "reputation": 6,
+        "materials": [
+          "晶蜥鳞"
+        ]
+      }
+    },
+    {
+      "name": "界碑拓片的抄录单",
+      "description": "铭法院要补抄无名录边界的界碑铭，但书记们人手不够——公会代征胆子大的：到边界外围拓三段残铭，人别过线。",
+      "requireCard": {
+        "minTier": "白银"
+      },
+      "rewards": {
+        "gc": 150,
+        "reputation": -2,
+        "materials": [
+          "底石拓片"
+        ]
+      },
+      "$comment_reward_note": "声望-2：替法院碰禁忌之物，荣誉账上不算干净"
+    },
+    {
+      "name": "行会的修复季单",
+      "description": "卡匠行会的修复季到了：一批损坏的旧卡排队等裱匠与铭匠上手。行会按修复质量分级付酬，耗材另算。",
+      "requireCard": {
+        "formEntry": "装备"
+      },
+      "rewards": {
+        "gc": 70,
+        "reputation": 3,
+        "materials": [
+          "灰笺铭石"
+        ]
+      }
     }
   ]
 }
