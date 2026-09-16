@@ -29,7 +29,13 @@
       "body": "旧秩序难以为继，主角的选择决定这片边境往后由谁书写。"
     }
   ],
-  "mapSources": [],
+  "mapSources": [
+    {
+      "key": "main",
+      "name": "铭刻大陆全图",
+      "url": "/data/content/base-map.png"
+    }
+  ],
   "workshopApiBase": "",
   "workshopLoginHint": ""
 }

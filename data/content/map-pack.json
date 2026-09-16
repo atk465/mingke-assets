@@ -1,0 +1,1557 @@
+{
+  "version": "mingke-1.0.0",
+  "contentHash": "mingke-map-v1-488",
+  "resolution": {
+    "w": 1920,
+    "h": 1200
+  },
+  "kmPerPx": 1.6,
+  "terrains": [
+    "平原",
+    "农田",
+    "丘陵",
+    "山脉",
+    "高原",
+    "森林",
+    "针叶林",
+    "湿地",
+    "草原",
+    "苔原",
+    "冰原",
+    "峡谷",
+    "海岸",
+    "近海",
+    "远洋",
+    "荒地"
+  ],
+  "developmentLevels": [
+    "废墟",
+    "荒野",
+    "营地",
+    "聚落",
+    "村庄",
+    "乡镇",
+    "城镇",
+    "城市",
+    "大城",
+    "都会"
+  ],
+  "mainBuildingNames": [
+    "断墙残垣",
+    "界石营地",
+    "驿站",
+    "村祠",
+    "仓储院",
+    "会馆",
+    "督府",
+    "总督署",
+    "行宫",
+    "帝都·冕京"
+  ],
+  "travelRules": {
+    "rates": {
+      "land": 30,
+      "nearSea": 60,
+      "farSea": 90
+    },
+    "embarkCost": 40,
+    "terrainFactor": {
+      "平原": 1,
+      "农田": 1,
+      "丘陵": 1.4,
+      "山脉": 2.4,
+      "高原": 1.6,
+      "森林": 1.5,
+      "针叶林": 1.6,
+      "湿地": 1.8,
+      "草原": 1.1,
+      "苔原": 1.5,
+      "冰原": 2.2,
+      "峡谷": 2,
+      "海岸": 1.2,
+      "近海": 1,
+      "远洋": 1,
+      "荒地": 1.9
+    },
+    "modes": [
+      {
+        "key": "foot",
+        "name": "步行",
+        "rateMult": 1
+      },
+      {
+        "key": "cart",
+        "name": "骡车",
+        "rateMult": 1.2,
+        "note": "官道专用"
+      },
+      {
+        "key": "ship",
+        "name": "海船",
+        "rateMult": 2,
+        "note": "仅海域"
+      }
+    ]
+  },
+  "countries": [
+    {
+      "id": "country_empire",
+      "name": "奥古斯提姆帝国",
+      "color": [
+        176,
+        60,
+        50
+      ],
+      "anchorTileId": 2
+    },
+    {
+      "id": "country_valentia",
+      "name": "瓦伦蒂亚公国",
+      "color": [
+        58,
+        110,
+        176
+      ],
+      "anchorTileId": 13
+    },
+    {
+      "id": "country_wild",
+      "name": "无主之地",
+      "color": [
+        128,
+        122,
+        112
+      ],
+      "unclaimed": true,
+      "anchorTileId": 26
+    }
+  ],
+  "midTiers": [
+    {
+      "id": "mid_jingji",
+      "name": "冕京京畿",
+      "countryId": "country_empire",
+      "climateId": "climate_temperate",
+      "anchorTileId": 2
+    },
+    {
+      "id": "mid_dongjing",
+      "name": "东境",
+      "countryId": "country_empire",
+      "climateId": "climate_temperate",
+      "anchorTileId": 3
+    },
+    {
+      "id": "mid_nanjing",
+      "name": "南境",
+      "countryId": "country_empire",
+      "climateId": "climate_coastal",
+      "anchorTileId": 5
+    },
+    {
+      "id": "mid_xinong",
+      "name": "西畿农带",
+      "countryId": "country_empire",
+      "climateId": "climate_temperate",
+      "anchorTileId": 6
+    },
+    {
+      "id": "mid_val_core",
+      "name": "公国本部",
+      "countryId": "country_valentia",
+      "climateId": "climate_temperate",
+      "anchorTileId": 13
+    },
+    {
+      "id": "mid_val_north",
+      "name": "公国北境",
+      "countryId": "country_valentia",
+      "climateId": "climate_cold",
+      "anchorTileId": 15
+    },
+    {
+      "id": "mid_wuminglu",
+      "name": "无名录",
+      "countryId": "country_wild",
+      "climateId": "climate_harsh",
+      "anchorTileId": 26
+    },
+    {
+      "id": "mid_liesi",
+      "name": "底石裂隙",
+      "countryId": "country_wild",
+      "climateId": "climate_harsh",
+      "anchorTileId": 28
+    },
+    {
+      "id": "mid_sea",
+      "name": "环陆海域",
+      "countryId": "country_wild",
+      "climateId": "climate_coastal",
+      "anchorTileId": 33
+    }
+  ],
+  "climates": {
+    "climate_temperate": {
+      "name": "温带内陆",
+      "table": {
+        "春季": [
+          [
+            "晴",
+            4
+          ],
+          [
+            "多云",
+            3
+          ],
+          [
+            "阴",
+            2
+          ],
+          [
+            "小雨",
+            3
+          ],
+          [
+            "雾",
+            1
+          ]
+        ],
+        "夏季": [
+          [
+            "晴",
+            5
+          ],
+          [
+            "多云",
+            3
+          ],
+          [
+            "大雨",
+            2
+          ],
+          [
+            "雷暴",
+            2
+          ]
+        ],
+        "秋季": [
+          [
+            "晴",
+            3
+          ],
+          [
+            "多云",
+            3
+          ],
+          [
+            "阴",
+            3
+          ],
+          [
+            "小雨",
+            2
+          ],
+          [
+            "雾",
+            2
+          ]
+        ],
+        "冬季": [
+          [
+            "阴",
+            3
+          ],
+          [
+            "多云",
+            2
+          ],
+          [
+            "小雪",
+            3
+          ],
+          [
+            "雾",
+            2
+          ],
+          [
+            "晴",
+            2
+          ]
+        ]
+      }
+    },
+    "climate_coastal": {
+      "name": "沿海润风",
+      "table": {
+        "春季": [
+          [
+            "多云",
+            4
+          ],
+          [
+            "小雨",
+            3
+          ],
+          [
+            "阴",
+            2
+          ],
+          [
+            "晴",
+            2
+          ],
+          [
+            "雾",
+            2
+          ]
+        ],
+        "夏季": [
+          [
+            "晴",
+            4
+          ],
+          [
+            "多云",
+            3
+          ],
+          [
+            "雷暴",
+            3
+          ],
+          [
+            "大雨",
+            2
+          ]
+        ],
+        "秋季": [
+          [
+            "多云",
+            4
+          ],
+          [
+            "阴",
+            3
+          ],
+          [
+            "小雨",
+            2
+          ],
+          [
+            "晴",
+            2
+          ]
+        ],
+        "冬季": [
+          [
+            "阴",
+            4
+          ],
+          [
+            "小雨",
+            2
+          ],
+          [
+            "雾",
+            3
+          ],
+          [
+            "多云",
+            2
+          ]
+        ]
+      }
+    },
+    "climate_cold": {
+      "name": "北地寒温",
+      "table": {
+        "春季": [
+          [
+            "阴",
+            3
+          ],
+          [
+            "小雪",
+            3
+          ],
+          [
+            "多云",
+            3
+          ],
+          [
+            "雾",
+            2
+          ]
+        ],
+        "夏季": [
+          [
+            "多云",
+            4
+          ],
+          [
+            "晴",
+            3
+          ],
+          [
+            "小雨",
+            2
+          ],
+          [
+            "雾",
+            2
+          ]
+        ],
+        "秋季": [
+          [
+            "阴",
+            4
+          ],
+          [
+            "小雪",
+            2
+          ],
+          [
+            "雾",
+            3
+          ],
+          [
+            "多云",
+            2
+          ]
+        ],
+        "冬季": [
+          [
+            "小雪",
+            4
+          ],
+          [
+            "大雪",
+            3
+          ],
+          [
+            "冰雾",
+            2
+          ],
+          [
+            "阴",
+            3
+          ]
+        ]
+      }
+    },
+    "climate_harsh": {
+      "name": "铭异荒地",
+      "table": {
+        "春季": [
+          [
+            "阴",
+            4
+          ],
+          [
+            "雾",
+            3
+          ],
+          [
+            "黑风",
+            2
+          ],
+          [
+            "晴",
+            1
+          ]
+        ],
+        "夏季": [
+          [
+            "雾",
+            3
+          ],
+          [
+            "阴",
+            3
+          ],
+          [
+            "黑风",
+            3
+          ],
+          [
+            "晴",
+            2
+          ]
+        ],
+        "秋季": [
+          [
+            "雾",
+            4
+          ],
+          [
+            "黑风",
+            3
+          ],
+          [
+            "阴",
+            3
+          ]
+        ],
+        "冬季": [
+          [
+            "黑风",
+            3
+          ],
+          [
+            "雪雾",
+            3
+          ],
+          [
+            "阴",
+            4
+          ]
+        ]
+      }
+    }
+  },
+  "tiles": [
+    {
+      "id": 1,
+      "name": "帝都·冕京",
+      "terrain": "平原",
+      "water": null,
+      "impassable": false,
+      "countryId": "country_empire",
+      "midTierId": "mid_jingji",
+      "color": [
+        96,
+        42,
+        151
+      ],
+      "centroid": [
+        1179.7,
+        254.0
+      ],
+      "areaPx": 40509,
+      "development": 10,
+      "mainBuilding": "帝都·冕京"
+    },
+    {
+      "id": 2,
+      "name": "冕京近畿",
+      "terrain": "农田",
+      "water": null,
+      "impassable": false,
+      "countryId": "country_empire",
+      "midTierId": "mid_jingji",
+      "color": [
+        30,
+        127,
+        50
+      ],
+      "centroid": [
+        1092.0,
+        253.2
+      ],
+      "areaPx": 45916,
+      "development": 8
+    },
+    {
+      "id": 3,
+      "name": "京畿林地",
+      "terrain": "森林",
+      "water": null,
+      "impassable": false,
+      "countryId": "country_empire",
+      "midTierId": "mid_jingji",
+      "color": [
+        200,
+        70,
+        82
+      ],
+      "centroid": [
+        1296.9,
+        238.3
+      ],
+      "areaPx": 75052,
+      "development": 3
+    },
+    {
+      "id": 4,
+      "name": "艾瑟嘉德",
+      "terrain": "草原",
+      "water": null,
+      "impassable": false,
+      "countryId": "country_empire",
+      "midTierId": "mid_dongjing",
+      "color": [
+        54,
+        81,
+        123
+      ],
+      "centroid": [
+        1440.6,
+        220.8
+      ],
+      "areaPx": 54140,
+      "development": 7,
+      "mainBuilding": "冒险者公会总会"
+    },
+    {
+      "id": 5,
+      "name": "东境丘陵",
+      "terrain": "丘陵",
+      "water": null,
+      "impassable": false,
+      "countryId": "country_empire",
+      "midTierId": "mid_dongjing",
+      "color": [
+        178,
+        210,
+        110
+      ],
+      "centroid": [
+        1597.3,
+        354.0
+      ],
+      "areaPx": 17742,
+      "development": 3
+    },
+    {
+      "id": 6,
+      "name": "东境哨堡",
+      "terrain": "草原",
+      "water": null,
+      "impassable": false,
+      "countryId": "country_empire",
+      "midTierId": "mid_dongjing",
+      "color": [
+        188,
+        47,
+        183
+      ],
+      "centroid": [
+        1830.4,
+        199.7
+      ],
+      "areaPx": 15049,
+      "development": 4
+    },
+    {
+      "id": 7,
+      "name": "麦乡平原",
+      "terrain": "农田",
+      "water": null,
+      "impassable": false,
+      "countryId": "country_empire",
+      "midTierId": "mid_xinong",
+      "color": [
+        53,
+        134,
+        113
+      ],
+      "centroid": [
+        1026.8,
+        329.1
+      ],
+      "areaPx": 34873,
+      "development": 6
+    },
+    {
+      "id": 8,
+      "name": "西部农业带",
+      "terrain": "农田",
+      "water": null,
+      "impassable": false,
+      "countryId": "country_empire",
+      "midTierId": "mid_xinong",
+      "color": [
+        163,
+        93,
+        36
+      ],
+      "centroid": [
+        897.6,
+        279.6
+      ],
+      "areaPx": 89817,
+      "development": 6
+    },
+    {
+      "id": 9,
+      "name": "帝国牧场",
+      "terrain": "草原",
+      "water": null,
+      "impassable": false,
+      "countryId": "country_empire",
+      "midTierId": "mid_xinong",
+      "color": [
+        52,
+        36,
+        141
+      ],
+      "centroid": [
+        892.0,
+        668.9
+      ],
+      "areaPx": 67442,
+      "development": 4
+    },
+    {
+      "id": 10,
+      "name": "南粮仓",
+      "terrain": "农田",
+      "water": null,
+      "impassable": false,
+      "countryId": "country_empire",
+      "midTierId": "mid_nanjing",
+      "color": [
+        107,
+        204,
+        92
+      ],
+      "centroid": [
+        1156.1,
+        572.3
+      ],
+      "areaPx": 21246,
+      "development": 6
+    },
+    {
+      "id": 11,
+      "name": "帝国南港",
+      "terrain": "海岸",
+      "water": null,
+      "impassable": false,
+      "countryId": "country_empire",
+      "midTierId": "mid_nanjing",
+      "color": [
+        196,
+        31,
+        102
+      ],
+      "centroid": [
+        1323.1,
+        663.7
+      ],
+      "areaPx": 73988,
+      "development": 7
+    },
+    {
+      "id": 12,
+      "name": "南部渔村",
+      "terrain": "海岸",
+      "water": null,
+      "impassable": false,
+      "countryId": "country_empire",
+      "midTierId": "mid_nanjing",
+      "color": [
+        44,
+        148,
+        189
+      ],
+      "centroid": [
+        1090.7,
+        758.9
+      ],
+      "areaPx": 54333,
+      "development": 3
+    },
+    {
+      "id": 13,
+      "name": "诺瓦·瓦伦蒂亚城",
+      "terrain": "平原",
+      "water": null,
+      "impassable": false,
+      "countryId": "country_valentia",
+      "midTierId": "mid_val_core",
+      "color": [
+        144,
+        143,
+        69
+      ],
+      "centroid": [
+        564.4,
+        432.2
+      ],
+      "areaPx": 16783,
+      "development": 8,
+      "mainBuilding": "女大公府"
+    },
+    {
+      "id": 14,
+      "name": "卡匠工坊区",
+      "terrain": "平原",
+      "water": null,
+      "impassable": false,
+      "countryId": "country_valentia",
+      "midTierId": "mid_val_core",
+      "color": [
+        158,
+        72,
+        196
+      ],
+      "centroid": [
+        694.0,
+        581.4
+      ],
+      "areaPx": 71977,
+      "development": 6
+    },
+    {
+      "id": 15,
+      "name": "公国农田",
+      "terrain": "农田",
+      "water": null,
+      "impassable": false,
+      "countryId": "country_valentia",
+      "midTierId": "mid_val_core",
+      "color": [
+        87,
+        158,
+        116
+      ],
+      "centroid": [
+        529.9,
+        637.6
+      ],
+      "areaPx": 40318,
+      "development": 5
+    },
+    {
+      "id": 16,
+      "name": "灰笺老街",
+      "terrain": "城镇",
+      "water": null,
+      "impassable": false,
+      "countryId": "country_valentia",
+      "midTierId": "mid_val_north",
+      "color": [
+        196,
+        105,
+        93
+      ],
+      "centroid": [
+        664.0,
+        292.8
+      ],
+      "areaPx": 41356,
+      "development": 5
+    },
+    {
+      "id": 17,
+      "name": "灰笺矿区",
+      "terrain": "山脉",
+      "water": null,
+      "impassable": false,
+      "countryId": "country_valentia",
+      "midTierId": "mid_val_north",
+      "color": [
+        42,
+        60,
+        145
+      ],
+      "centroid": [
+        623.1,
+        199.6
+      ],
+      "areaPx": 32163,
+      "development": 6
+    },
+    {
+      "id": 18,
+      "name": "菌孢林",
+      "terrain": "森林",
+      "water": null,
+      "impassable": false,
+      "countryId": "country_valentia",
+      "midTierId": "mid_val_north",
+      "color": [
+        98,
+        148,
+        54
+      ],
+      "centroid": [
+        371.5,
+        340.3
+      ],
+      "areaPx": 40557,
+      "development": 2
+    },
+    {
+      "id": 19,
+      "name": "西部海岸",
+      "terrain": "海岸",
+      "water": null,
+      "impassable": false,
+      "countryId": "country_valentia",
+      "midTierId": "mid_val_core",
+      "color": [
+        143,
+        69,
+        126
+      ],
+      "centroid": [
+        307.9,
+        584.3
+      ],
+      "areaPx": 77185,
+      "development": 4
+    },
+    {
+      "id": 20,
+      "name": "北境山口",
+      "terrain": "峡谷",
+      "water": null,
+      "impassable": false,
+      "countryId": "country_valentia",
+      "midTierId": "mid_val_north",
+      "color": [
+        36,
+        158,
+        152
+      ],
+      "centroid": [
+        615.9,
+        86.3
+      ],
+      "areaPx": 70751,
+      "development": 2
+    },
+    {
+      "id": 21,
+      "name": "无名录边缘",
+      "terrain": "荒地",
+      "water": null,
+      "impassable": false,
+      "countryId": "country_wild",
+      "midTierId": "mid_wuminglu",
+      "color": [
+        174,
+        147,
+        95
+      ],
+      "centroid": [
+        1528.2,
+        521.1
+      ],
+      "areaPx": 47331,
+      "development": 1
+    },
+    {
+      "id": 22,
+      "name": "无名录腹地",
+      "terrain": "荒地",
+      "water": null,
+      "impassable": true,
+      "countryId": "country_wild",
+      "midTierId": "mid_wuminglu",
+      "color": [
+        133,
+        92,
+        204
+      ],
+      "centroid": [
+        1688.1,
+        552.3
+      ],
+      "areaPx": 9027,
+      "development": 1
+    },
+    {
+      "id": 23,
+      "name": "底石裂隙",
+      "terrain": "峡谷",
+      "water": null,
+      "impassable": true,
+      "countryId": "country_wild",
+      "midTierId": "mid_liesi",
+      "color": [
+        49,
+        146,
+        56
+      ],
+      "centroid": [
+        195.8,
+        129.3
+      ],
+      "areaPx": 35460,
+      "development": 1
+    },
+    {
+      "id": 24,
+      "name": "霜颸北境",
+      "terrain": "苔原",
+      "water": null,
+      "impassable": false,
+      "countryId": "country_wild",
+      "midTierId": "mid_liesi",
+      "color": [
+        132,
+        32,
+        54
+      ],
+      "centroid": [
+        357.2,
+        49.5
+      ],
+      "areaPx": 17473,
+      "development": 1
+    },
+    {
+      "id": 25,
+      "name": "野铭者谷地",
+      "terrain": "峡谷",
+      "water": null,
+      "impassable": false,
+      "countryId": "country_wild",
+      "midTierId": "mid_liesi",
+      "color": [
+        68,
+        110,
+        151
+      ],
+      "centroid": [
+        305.9,
+        208.0
+      ],
+      "areaPx": 25542,
+      "development": 2
+    },
+    {
+      "id": 26,
+      "name": "南部近海",
+      "terrain": "近海",
+      "water": "sea",
+      "impassable": false,
+      "countryId": "country_wild",
+      "midTierId": "mid_sea",
+      "color": [
+        164,
+        189,
+        61
+      ],
+      "centroid": [
+        1117.2,
+        995.8
+      ],
+      "areaPx": 94807
+    },
+    {
+      "id": 27,
+      "name": "东南近海",
+      "terrain": "近海",
+      "water": "sea",
+      "impassable": false,
+      "countryId": "country_wild",
+      "midTierId": "mid_sea",
+      "color": [
+        137,
+        77,
+        143
+      ],
+      "centroid": [
+        1703.7,
+        524.1
+      ],
+      "areaPx": 366893
+    },
+    {
+      "id": 28,
+      "name": "西部近海",
+      "terrain": "近海",
+      "water": "sea",
+      "impassable": false,
+      "countryId": "country_wild",
+      "midTierId": "mid_sea",
+      "color": [
+        56,
+        163,
+        121
+      ],
+      "centroid": [
+        109.4,
+        593.3
+      ],
+      "areaPx": 55746
+    },
+    {
+      "id": 29,
+      "name": "北部近海",
+      "terrain": "近海",
+      "water": "sea",
+      "impassable": false,
+      "countryId": "country_wild",
+      "midTierId": "mid_sea",
+      "color": [
+        189,
+        131,
+        103
+      ],
+      "centroid": [
+        1065.9,
+        0.3
+      ],
+      "areaPx": 15
+    },
+    {
+      "id": 30,
+      "name": "裂隙外海",
+      "terrain": "近海",
+      "water": "sea",
+      "impassable": false,
+      "countryId": "country_wild",
+      "midTierId": "mid_sea",
+      "color": [
+        36,
+        32,
+        165
+      ],
+      "centroid": [
+        93.9,
+        266.0
+      ],
+      "areaPx": 78907
+    },
+    {
+      "id": 31,
+      "name": "南方远洋",
+      "terrain": "远洋",
+      "water": "sea",
+      "impassable": false,
+      "countryId": "country_wild",
+      "midTierId": "mid_sea",
+      "color": [
+        91,
+        147,
+        71
+      ],
+      "centroid": [
+        698.6,
+        1019.1
+      ],
+      "areaPx": 214601
+    },
+    {
+      "id": 32,
+      "name": "东南远洋",
+      "terrain": "远洋",
+      "water": "sea",
+      "impassable": false,
+      "countryId": "country_wild",
+      "midTierId": "mid_sea",
+      "color": [
+        157,
+        68,
+        118
+      ],
+      "centroid": [
+        1544.2,
+        1068.0
+      ],
+      "areaPx": 169137
+    },
+    {
+      "id": 33,
+      "name": "西方远洋",
+      "terrain": "远洋",
+      "water": "sea",
+      "impassable": false,
+      "countryId": "country_wild",
+      "midTierId": "mid_sea",
+      "color": [
+        62,
+        189,
+        212
+      ],
+      "centroid": [
+        232.6,
+        948.5
+      ],
+      "areaPx": 207864
+    }
+  ],
+  "adjacency": [
+    [
+      1,
+      2,
+      40
+    ],
+    [
+      1,
+      3,
+      40
+    ],
+    [
+      1,
+      10,
+      40
+    ],
+    [
+      1,
+      11,
+      40
+    ],
+    [
+      2,
+      7,
+      40
+    ],
+    [
+      2,
+      10,
+      40
+    ],
+    [
+      2,
+      29,
+      40
+    ],
+    [
+      3,
+      4,
+      40
+    ],
+    [
+      3,
+      11,
+      40
+    ],
+    [
+      3,
+      21,
+      40
+    ],
+    [
+      4,
+      5,
+      40
+    ],
+    [
+      4,
+      21,
+      40
+    ],
+    [
+      4,
+      27,
+      40
+    ],
+    [
+      5,
+      21,
+      40
+    ],
+    [
+      5,
+      27,
+      40
+    ],
+    [
+      6,
+      27,
+      40
+    ],
+    [
+      7,
+      8,
+      40
+    ],
+    [
+      7,
+      9,
+      40
+    ],
+    [
+      7,
+      10,
+      40
+    ],
+    [
+      8,
+      9,
+      40
+    ],
+    [
+      8,
+      14,
+      40
+    ],
+    [
+      8,
+      16,
+      40
+    ],
+    [
+      8,
+      17,
+      40
+    ],
+    [
+      8,
+      20,
+      40
+    ],
+    [
+      9,
+      10,
+      40
+    ],
+    [
+      9,
+      12,
+      40
+    ],
+    [
+      9,
+      14,
+      40
+    ],
+    [
+      9,
+      26,
+      40
+    ],
+    [
+      9,
+      31,
+      40
+    ],
+    [
+      10,
+      11,
+      40
+    ],
+    [
+      10,
+      12,
+      40
+    ],
+    [
+      11,
+      12,
+      40
+    ],
+    [
+      11,
+      21,
+      40
+    ],
+    [
+      11,
+      26,
+      40
+    ],
+    [
+      11,
+      27,
+      40
+    ],
+    [
+      12,
+      26,
+      40
+    ],
+    [
+      13,
+      14,
+      40
+    ],
+    [
+      13,
+      15,
+      40
+    ],
+    [
+      13,
+      16,
+      40
+    ],
+    [
+      13,
+      18,
+      40
+    ],
+    [
+      13,
+      19,
+      40
+    ],
+    [
+      14,
+      15,
+      40
+    ],
+    [
+      14,
+      16,
+      40
+    ],
+    [
+      14,
+      31,
+      40
+    ],
+    [
+      15,
+      19,
+      40
+    ],
+    [
+      15,
+      31,
+      40
+    ],
+    [
+      15,
+      33,
+      40
+    ],
+    [
+      16,
+      17,
+      40
+    ],
+    [
+      16,
+      18,
+      40
+    ],
+    [
+      17,
+      18,
+      40
+    ],
+    [
+      17,
+      20,
+      40
+    ],
+    [
+      17,
+      25,
+      40
+    ],
+    [
+      18,
+      19,
+      40
+    ],
+    [
+      18,
+      23,
+      40
+    ],
+    [
+      18,
+      25,
+      40
+    ],
+    [
+      18,
+      30,
+      40
+    ],
+    [
+      19,
+      28,
+      40
+    ],
+    [
+      19,
+      30,
+      40
+    ],
+    [
+      19,
+      33,
+      40
+    ],
+    [
+      20,
+      24,
+      40
+    ],
+    [
+      20,
+      25,
+      40
+    ],
+    [
+      21,
+      22,
+      40
+    ],
+    [
+      21,
+      27,
+      40
+    ],
+    [
+      22,
+      27,
+      40
+    ],
+    [
+      23,
+      24,
+      40
+    ],
+    [
+      23,
+      25,
+      40
+    ],
+    [
+      23,
+      30,
+      40
+    ],
+    [
+      24,
+      25,
+      40
+    ],
+    [
+      26,
+      27,
+      40
+    ],
+    [
+      26,
+      31,
+      40
+    ],
+    [
+      26,
+      32,
+      40
+    ],
+    [
+      27,
+      32,
+      40
+    ],
+    [
+      28,
+      30,
+      40
+    ],
+    [
+      28,
+      33,
+      40
+    ],
+    [
+      31,
+      33,
+      40
+    ]
+  ],
+  "straits": [],
+  "placeBindings": {
+    "艾瑟嘉德": 4,
+    "帝都·冕京": 1,
+    "诺瓦·瓦伦蒂亚城": 13,
+    "灰笺矿脉": 16,
+    "灰笺老街": 17,
+    "无名录": 26,
+    "底石裂隙": 28,
+    "命运祭坛": 4
+  }
+}
