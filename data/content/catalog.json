@@ -1,5 +1,5 @@
 {
-  "$comment": "《铭刻录》正式内容包 catalog —— cardPool 含开局购卡目录（可购四类）与巨兽召唤池（召唤 8 张，首召实体化）；鎏金/星辉计价 80/160",
+  "$comment": "《铭刻录》正式内容包 catalog —— cardPool 含开局购卡（可购四类）、巨兽召唤池、名所地景卡与禁忌仿卡（imitation 配方，黑市线）",
   "version": 1,
   "equipmentPool": [
     {
@@ -718,6 +718,194 @@
       "companion": {
         "race": "菌孢鹿族",
         "temperament": "好奇心比体重重"
+      }
+    },
+    {
+      "id": "ld_huijian_mid",
+      "name": "灰笺矿脉·中层",
+      "cardTier": "青铜",
+      "formEntry": "领域",
+      "element": "土",
+      "description": "中层矿道的回声之地，铭纹比人老。",
+      "cost": 20
+    },
+    {
+      "id": "ld_wuminglu",
+      "name": "无名录·界碑残片",
+      "cardTier": "鎏金",
+      "formEntry": "领域",
+      "element": "暗",
+      "description": "一片被抹去的国土的最后一块界碑。",
+      "cost": 80
+    },
+    {
+      "id": "ld_miyuan",
+      "name": "命运祭坛",
+      "cardTier": "白银",
+      "formEntry": "领域",
+      "element": "光",
+      "description": "掷问之地。坛上的火从不用添。",
+      "cost": 40
+    },
+    {
+      "id": "ld_kashi",
+      "name": "卡市夜巷",
+      "cardTier": "白银",
+      "formEntry": "领域",
+      "element": "暗",
+      "description": "开集日的夜里，这里比白天亮。",
+      "cost": 40
+    },
+    {
+      "id": "ld_dishi",
+      "name": "底石裂隙·迎面",
+      "cardTier": "星辉",
+      "formEntry": "领域",
+      "element": "暗",
+      "description": "世界的语法出错的地方。看一眼，终身难忘。",
+      "cost": 160
+    },
+    {
+      "id": "ld_laojie",
+      "name": "灰笺老街",
+      "cardTier": "青铜",
+      "formEntry": "领域",
+      "element": "金",
+      "description": "矿工们让路给车的地方，如今让路给回忆。",
+      "cost": 20
+    },
+    {
+      "id": "imi_wuminghe",
+      "name": "仿·无名河",
+      "cardTier": "白银",
+      "formEntry": [
+        "水"
+      ],
+      "element": "沉河砂",
+      "description": [
+        "霜晶",
+        "沉河砂",
+        "灰笺铭石"
+      ],
+      "cost": "河水在这里只有一行。削弱版：仅能短暂改写小股水流。",
+      "imitation": {
+        "ofName": "无名河",
+        "materials": 60
+      }
+    },
+    {
+      "id": "imi_shinianli",
+      "name": "仿·失年历",
+      "cardTier": "白银",
+      "formEntry": [
+        "暗"
+      ],
+      "element": "霜蜡",
+      "description": [
+        "霜蜡",
+        "白蜡粉",
+        "灰笺铭石"
+      ],
+      "cost": "偷来半天的时间。削弱版：只有半炷香。",
+      "imitation": {
+        "ofName": "失年历",
+        "materials": 60
+      }
+    },
+    {
+      "id": "imi_fentian",
+      "name": "仿·焚天引",
+      "cardTier": "鎏金",
+      "formEntry": [
+        "火"
+      ],
+      "element": "烬心石",
+      "description": [
+        "烬心石",
+        "炎心草",
+        "火晶髓"
+      ],
+      "cost": "只燎得动一堵墙。削弱版：威力十不存一，反噬是真的。",
+      "imitation": {
+        "ofName": "焚天引",
+        "materials": 100
+      }
+    },
+    {
+      "id": "imi_wanshouyuan",
+      "name": "仿·万兽园",
+      "cardTier": "鎏金",
+      "formEntry": [
+        "土"
+      ],
+      "element": "兽骨粉",
+      "description": [
+        "兽骨粉",
+        "苔孢鹿角",
+        "地脉髓"
+      ],
+      "cost": "园门开一线，走出一头幼兽。削弱版：园中无兽，只有门。",
+      "imitation": {
+        "ofName": "万兽园",
+        "materials": 100
+      }
+    },
+    {
+      "id": "imi_chenxin",
+      "name": "仿·称心秤",
+      "cardTier": "白银",
+      "formEntry": [
+        "金"
+      ],
+      "element": "称心砝",
+      "description": [
+        "称心砝",
+        "金衡环",
+        "灰笺铭石"
+      ],
+      "cost": "秤得出愿望，付不起价钱。削弱版：只称不换。",
+      "imitation": {
+        "ofName": "称心秤",
+        "materials": 60
+      }
+    },
+    {
+      "id": "imi_baila",
+      "name": "仿·白蜡城",
+      "cardTier": "鎏金",
+      "formEntry": [
+        "冰"
+      ],
+      "element": "白蜡壳",
+      "description": [
+        "白蜡壳",
+        "霜晶",
+        "晶蜥鳞"
+      ],
+      "cost": "封住半条街的黄昏。削弱版：封住的只有自己。",
+      "imitation": {
+        "ofName": "白蜡城",
+        "materials": 100
+      }
+    },
+    {
+      "id": "imi_diyihang",
+      "name": "仿·第一行",
+      "cardTier": "星辉",
+      "formEntry": [
+        "光"
+      ],
+      "element": "底石拓片",
+      "description": [
+        "底石拓片",
+        "辉金砂",
+        "晶蜥鳞",
+        "地脉髓"
+      ],
+      "cost": "拓不出神，拓出一道裂缝。最危险的仿品。",
+      "imitation": {
+        "ofName": "第一行",
+        "materials": 160
       }
     }
   ]
