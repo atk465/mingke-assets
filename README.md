@@ -1,5 +1,8 @@
 # fated_poem_independent_assets ——《铭刻录》正式内容仓
 
+> 来源声明：本项目世界观改编自《命定之诗》并遵循其内容二创授权协议标明来源；
+> 去关联工程（世界观众名词替换）已立项，见 docs/canon.md v1.3+ 备注。
+
 《铭刻录》（引擎仓 `IndependentFront-for-destined-journey`）的**正式内容包真源**。
 产出单 JSON 内容包 `fated-poem-pack-<semver>.json`（packId `fated-poem-official`），经引擎设置页导入安装。
 
