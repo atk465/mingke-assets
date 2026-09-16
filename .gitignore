@@ -1,0 +1,8 @@
+# 构建产物
+*.log
+dist/
+tools/.cache/
+
+# 系统文件
+Thumbs.db
+Desktop.ini
