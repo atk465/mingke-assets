@@ -1,5 +1,5 @@
 {
-  "$comment": "《铭刻录》正式内容包 catalog —— cardPool 含开局购卡（可购四类）、巨兽召唤池、名所地景卡与禁忌仿卡（imitation 配方，黑市线）",
+  "$comment": "《铭刻录》正式内容包 catalog —— cardPool 含开局购卡/巨兽召唤/禁忌仿卡/名所地景 4 类；五档品质（白铁 10 / 青铜 20 / 白银 40 / 鎏金 80 / 星辉 160 点）齐覆盖",
   "version": 1,
   "equipmentPool": [
     {
@@ -907,6 +907,150 @@
         "ofName": "第一行",
         "materials": 160
       }
+    },
+    {
+      "id": "eq_bizuan",
+      "name": "壁钻锤",
+      "cardTier": "白铁",
+      "formEntry": "装备",
+      "element": "土",
+      "description": "矮匠人爱用的小锤，替主人收一批回扣料。",
+      "cost": 10
+    },
+    {
+      "id": "eq_yunshui",
+      "name": "运水囊",
+      "cardTier": "白铁",
+      "formEntry": "装备",
+      "element": "水",
+      "description": "双肩大水袋，比壶轻一斗。",
+      "cost": 10
+    },
+    {
+      "id": "sk_feng",
+      "name": "风绊",
+      "cardTier": "白铁",
+      "formEntry": "技能",
+      "element": "风",
+      "description": "把人钉原地一拍——风把脚踝绑住。",
+      "cost": 10
+    },
+    {
+      "id": "ld_shalin",
+      "name": "沙林小道",
+      "cardTier": "白铁",
+      "formEntry": "领域",
+      "element": "土",
+      "description": "扎营后防风沙的小沙圈，不算领域也算地方。",
+      "cost": 10
+    },
+    {
+      "id": "eq_yezh",
+      "name": "冶痕锥",
+      "cardTier": "青铜",
+      "formEntry": "装备",
+      "element": "火",
+      "description": "沾过炉火的金属锥，戳不穿但能认。",
+      "cost": 20
+    },
+    {
+      "id": "su_fenghuang",
+      "name": "风鸢燃料",
+      "cardTier": "青铜",
+      "formEntry": "物资",
+      "element": "风",
+      "description": "风鸢枕下的一袋油，不能吃。",
+      "cost": 20
+    },
+    {
+      "id": "eq_yingzh",
+      "name": "影质面甲",
+      "cardTier": "白银",
+      "formEntry": "装备",
+      "element": "暗",
+      "description": "一块能挡视线的薄面甲——有时候挡的不只是视线。",
+      "cost": 40
+    },
+    {
+      "id": "eq_tiexi",
+      "name": "铁蜥披风",
+      "cardTier": "白银",
+      "formEntry": "装备",
+      "element": "金",
+      "description": "晶蜥的底蜕织成的披风，抵住过的刃太多。",
+      "cost": 40
+    },
+    {
+      "id": "ld_zaojing",
+      "name": "早京",
+      "cardTier": "白银",
+      "formEntry": "领域",
+      "element": "火",
+      "description": "帝都里十字路口最亮的那一小片天空。",
+      "cost": 40
+    },
+    {
+      "id": "ld_yueying",
+      "name": "月影谷",
+      "cardTier": "白银",
+      "formEntry": "领域",
+      "element": "暗",
+      "description": "帝国边境一处常年被月影占着的谷口。",
+      "cost": 40
+    },
+    {
+      "id": "sk_yingzhan",
+      "name": "影展·三拍",
+      "cardTier": "鎏金",
+      "formEntry": "技能",
+      "element": "暗",
+      "description": "把最重的一击分作三拍递出——听者只来得及退半步。",
+      "cost": 80
+    },
+    {
+      "id": "eq_fengxiang",
+      "name": "风像·中",
+      "cardTier": "鎏金",
+      "formEntry": "装备",
+      "element": "风",
+      "description": "风隼战团的佩甲中件，穿上它才知道什么叫“上下同身”。",
+      "cost": 80
+    },
+    {
+      "id": "eq_xingfan",
+      "name": "星帆行袍",
+      "cardTier": "星辉",
+      "formEntry": "装备",
+      "element": "光",
+      "description": "看名字像水上風帆，其实是造于心上的错金。",
+      "cost": 160
+    },
+    {
+      "id": "ld_bendong",
+      "name": "本地·冕京一巷",
+      "cardTier": "星辉",
+      "formEntry": "领域",
+      "element": "光",
+      "description": "帝都最不起眼的那一巷——却什么都流到过。",
+      "cost": 160
+    },
+    {
+      "id": "sk_siyu",
+      "name": "思与上",
+      "cardTier": "星辉",
+      "formEntry": "技能",
+      "element": "光",
+      "description": "一念顶上三天——能在最制的内斗里只平一合。",
+      "cost": 160
+    },
+    {
+      "id": "ld_yuanqi",
+      "name": "原起坑",
+      "cardTier": "星辉",
+      "formEntry": "领域",
+      "element": "暗",
+      "description": "世界底石第一行被写下的那一口坑。谁下去谁取不出一张原貌。",
+      "cost": 160
     }
   ]
 }
