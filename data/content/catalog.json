@@ -1051,6 +1051,132 @@
       "element": "暗",
       "description": "世界底石第一行被写下的那一口坑。谁下去谁取不出一张原貌。",
       "cost": 160
+    },
+    {
+      "id": "sm_yinchan",
+      "name": "潮涌的银蟾",
+      "cardTier": "鎏金",
+      "formEntry": "召唤",
+      "element": "水",
+      "description": "从底石裂隙的某口坑里涌出——鼓膜先于眼睛察觉到。满身的黏膜会自动反光。",
+      "cost": 80
+    },
+    {
+      "id": "sm_roujian",
+      "name": "绵延肉塔",
+      "cardTier": "星辉",
+      "formEntry": "召唤",
+      "element": "暗",
+      "description": "一座用人的口与臂交织成的塔——越登越高，身份越模糊。召唤时它会以最后那个名字叫你。",
+      "cost": 160
+    },
+    {
+      "id": "sm_changhua",
+      "name": "霜肉诵者",
+      "cardTier": "星辉",
+      "formEntry": "召唤",
+      "element": "冰",
+      "description": "它以人皮为扉，以冰为书。一开口，谷里的人便不再记得上一句话。",
+      "cost": 160
+    },
+    {
+      "id": "ld_bendong",
+      "name": "本地·无人巷",
+      "cardTier": "青铜",
+      "formEntry": "领域",
+      "element": "暗",
+      "description": "这一巷就是那条——你抬头看了一眼对面的屋子，忽然忘了自己要去哪。",
+      "cost": 20
+    },
+    {
+      "id": "ld_yusheng",
+      "name": "雨圣祠檐下",
+      "cardTier": "白银",
+      "formEntry": "领域",
+      "element": "水",
+      "description": "谁在檐下祈祷，谁就会被那个人听见。祠里空了，檐却常常是湿的。",
+      "cost": 40
+    },
+    {
+      "id": "ld_xudiansenlin",
+      "name": "虚点森林",
+      "cardTier": "星辉",
+      "formEntry": "领域",
+      "element": "暗",
+      "description": "这片林子没有方向——你的指南针永远缺一个数字，脚下的雪在你不看的时候多了一层。",
+      "cost": 160
+    },
+    {
+      "id": "sk_bushiq",
+      "name": "不去想",
+      "cardTier": "白铁",
+      "formEntry": "技能",
+      "element": "暗",
+      "description": "一拍的工夫里把一件不该想的事按下去。代价：打完此拍后，这张卡从此从你的记忆里消失。",
+      "cost": 10
+    },
+    {
+      "id": "sk_chaqi",
+      "name": "察觉仪",
+      "cardTier": "白银",
+      "formEntry": "技能",
+      "element": "光",
+      "description": "从怀里摸出一面铜镜样的器具——用它照见的真相每看一次都会变一次。",
+      "cost": 40
+    },
+    {
+      "id": "sk_daduijue",
+      "name": "答对绝",
+      "cardTier": "鎏金",
+      "formEntry": "技能",
+      "element": "火",
+      "description": "一句回应，直接撕裂对方的应招链。代价是：你必须知道对方的真名。",
+      "cost": 80
+    },
+    {
+      "id": "eq_eyepatch",
+      "name": "辨灰眼罩",
+      "cardTier": "白铁",
+      "formEntry": "装备",
+      "element": "暗",
+      "description": "蒙住左眼的那种。你从此不用再看见底石的细纹——但右眼还会替你流泪。",
+      "cost": 10
+    },
+    {
+      "id": "eq_benzhizhen",
+      "name": "本真针",
+      "cardTier": "青铜",
+      "formEntry": "装备",
+      "element": "金",
+      "description": "一枚能缝起裂口的针——用它缝过的东西，从此与你同命。",
+      "cost": 20
+    },
+    {
+      "id": "eq_yonghenvu",
+      "name": "永痕覆",
+      "cardTier": "白银",
+      "formEntry": "装备",
+      "element": "暗",
+      "description": "一件会自己改换颜色的袍子——看过它的人从此再也认不出穿它的人。",
+      "cost": 40
+    },
+    {
+      "id": "su_wangzhijing",
+      "name": "往之境",
+      "cardTier": "白铁",
+      "formEntry": "物资",
+      "element": "暗",
+      "description": "一块折了多次的纸——写过的字会自动从世界任何地方消失。你在它上面写下对手的真名。",
+      "cost": 10
+    },
+    {
+      "id": "su_zimangao",
+      "name": "自缢膏",
+      "cardTier": "青铜",
+      "formEntry": "物资",
+      "element": "暗",
+      "description": "一罐涂了才能用的黑膏——抹在语声上，从此再说不出一句真话。",
+      "cost": 20
     }
   ]
 }
