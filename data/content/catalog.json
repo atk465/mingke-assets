@@ -1285,6 +1285,105 @@
       "element": "水",
       "description": "把一件刚发生的小事渡到对岸去——对岸的世界会替你忘了它。",
       "cost": 40
+    },
+    {
+      "id": "jl_lianchen",
+      "name": "敛尘匣·零七",
+      "cardTier": "白铁",
+      "formEntry": "物资",
+      "element": "暗",
+      "description": "铭法院禁录库流出的小匣，封条是复制版的。匣里空无一物，但匣外的尘不再落到匣内。",
+      "cost": 10
+    },
+    {
+      "id": "sk_guifan",
+      "name": "归档式",
+      "cardTier": "白铁",
+      "formEntry": "技能",
+      "element": "光",
+      "description": "把一段刚发生的小事按法院口径誊写归档——被归档的事会变得安分。",
+      "cost": 10
+    },
+    {
+      "id": "eq_shenshi",
+      "name": "慎览目镜",
+      "cardTier": "白铁",
+      "formEntry": "装备",
+      "element": "暗",
+      "description": "镜片上刻着「慎」字的黄铜目镜。看什么都不带感情——这正是它的防护原理。",
+      "cost": 10
+    },
+    {
+      "id": "eq_rench",
+      "name": "认知危害护符·壬",
+      "cardTier": "青铜",
+      "formEntry": "装备",
+      "element": "暗",
+      "description": "护符上「壬」字是编号第九的仿造符——真符在禁录库，看到真符的人已经被归档了。",
+      "cost": 20
+    },
+    {
+      "id": "ld_shenlu",
+      "name": "慎览回廊",
+      "cardTier": "青铜",
+      "formEntry": "领域",
+      "element": "暗",
+      "description": "禁录库的外围回廊，墙上钉满了「看过就忘」的告示——告示是真的有用。",
+      "cost": 20
+    },
+    {
+      "id": "sk_xieyi",
+      "name": "协议口令",
+      "cardTier": "青铜",
+      "formEntry": "技能",
+      "element": "光",
+      "description": "一句法院制式的安进口令——说出口时，听见的人会暂时相信一切正常。",
+      "cost": 20
+    },
+    {
+      "id": "su_shoupin",
+      "name": "收容签",
+      "cardTier": "青铜",
+      "formEntry": "物资",
+      "element": "金",
+      "description": "一枚盖了法院半印的签子——它保证签上的东西暂时不闹，不保证永远。",
+      "cost": 20
+    },
+    {
+      "id": "ld_duincang",
+      "name": "断念库·第九层",
+      "cardTier": "星辉",
+      "formEntry": "领域",
+      "element": "暗",
+      "description": "禁录库最深的一层。守卫换班时从不回头看库门——库门也不看他们。",
+      "cost": 160
+    },
+    {
+      "id": "sk_duince",
+      "name": "断念策",
+      "cardTier": "鎏金",
+      "formEntry": "技能",
+      "element": "暗",
+      "description": "法院最高阶的反制术：把对手接下来最危险的一手直接从你的记忆里删除——代价是你自己也不知道删了什么。",
+      "cost": 80
+    },
+    {
+      "id": "eq_mingguan",
+      "name": "铭棺",
+      "cardTier": "鎏金",
+      "formEntry": "装备",
+      "element": "暗",
+      "description": "一口刚好装下一张卡的黑色小棺。棺上无锁——它锁的是外面的人，不是里面的东西。",
+      "cost": 80
+    },
+    {
+      "id": "eq_wuyin",
+      "name": "五印之环",
+      "cardTier": "星辉",
+      "formEntry": "装备",
+      "element": "光",
+      "description": "铭法院五位创院者各留一印，合于一环。戴上它，你说的每句话都自动成为「记录」——而记录就是事实。",
+      "cost": 160
     }
   ]
 }
