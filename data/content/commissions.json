@@ -82,6 +82,57 @@
           "灰笺铭石"
         ]
       }
+    },
+    {
+      "name": "禁录库·灰柜整理",
+      "description": "禁录库外围灰柜多年未理，法院贴出整理单——胆小的人做不来，因为有些卷宗自己会翻页。",
+      "requireCard": {},
+      "rewards": {
+        "gc": 40,
+        "reputation": 2,
+        "materials": [
+          "灰笺铭石"
+        ]
+      }
+    },
+    {
+      "name": "禁录库·慎览回廊值守",
+      "description": "慎览层年度值守，需要一名持有白银以上铭卡者在回廊过夜。守卫说：「不回头就行。」",
+      "requireCard": {
+        "minTier": "白银"
+      },
+      "rewards": {
+        "gc": 80,
+        "reputation": 3
+      }
+    },
+    {
+      "name": "禁录库·界碑拓片护送",
+      "description": "无名录边界拓下的三段残铭需紧急护送入第九层门口。路上不能看拓片内容——看了的人都改了性子。",
+      "requireCard": {
+        "minTier": "鎏金"
+      },
+      "rewards": {
+        "gc": 150,
+        "reputation": 5,
+        "materials": [
+          "底石拓片"
+        ]
+      }
+    },
+    {
+      "name": "禁录库·断念层协查",
+      "description": "断念层年度盘点。协助垣守逐柜核对封印状态——需要一张鎏金以上铭卡压阵，否则柜里的东西不老实。",
+      "requireCard": {
+        "minTier": "鎏金"
+      },
+      "rewards": {
+        "gc": 250,
+        "reputation": 8,
+        "materials": [
+          "五印残片"
+        ]
+      }
     }
   ]
 }
