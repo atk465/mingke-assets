@@ -658,7 +658,10 @@
       "cardTier": "白铁",
       "formEntry": "物资",
       "description": "一小袋铸着铭冕纹的币。打出即折算。",
-      "cost": 10
+      "cost": 10,
+      "yield": {
+        "gc": 55
+      }
     },
     {
       "id": "su_ganliang",
@@ -666,7 +669,12 @@
       "cardTier": "白铁",
       "formEntry": "物资",
       "description": "三天的口粮，一张卡管饱。",
-      "cost": 10
+      "cost": 10,
+      "yield": {
+        "name": "干粮",
+        "quantity": 3,
+        "itemType": "消耗品"
+      }
     },
     {
       "id": "su_mingshi",
@@ -674,7 +682,12 @@
       "cardTier": "青铜",
       "formEntry": "物资",
       "description": "灰笺矿脉的边角料，制卡师见了眼亮。",
-      "cost": 20
+      "cost": 20,
+      "yield": {
+        "name": "铭石碎料",
+        "quantity": 2,
+        "itemType": "材料"
+      }
     },
     {
       "id": "su_yizhan",
@@ -682,7 +695,12 @@
       "cardTier": "白铁",
       "formEntry": "物资",
       "description": "官道驿站的加急签，写着「勿拦」。",
-      "cost": 10
+      "cost": 10,
+      "yield": {
+        "name": "驿站通行凭据",
+        "quantity": 1,
+        "itemType": "消耗品"
+      }
     },
     {
       "id": "su_yaogao",
@@ -690,7 +708,12 @@
       "cardTier": "青铜",
       "formEntry": "物资",
       "description": "药剂师行会的标准品，撕开即用。",
-      "cost": 20
+      "cost": 20,
+      "yield": {
+        "name": "疗伤药膏",
+        "quantity": 2,
+        "itemType": "消耗品"
+      }
     },
     {
       "id": "su_gongju",
@@ -698,7 +721,12 @@
       "cardTier": "青铜",
       "formEntry": "物资",
       "description": "小篆同款。修卡补铭，随身一套。",
-      "cost": 20
+      "cost": 20,
+      "yield": {
+        "name": "卡匠工具",
+        "quantity": 1,
+        "itemType": "材料"
+      }
     },
     {
       "id": "sm_yanzhua",
@@ -879,7 +907,7 @@
       "id": "imi_shinianli",
       "name": "仿·失年历",
       "cardTier": "白银",
-      "formEntry": "物资",
+      "formEntry": "领域",
       "element": "霜蜡",
       "description": "偷来半天的时间。削弱版：只有半炷香。",
       "cost": 40,
@@ -890,7 +918,8 @@
           "白蜡粉",
           "灰笺铭石"
         ]
-      }
+      },
+      "$note": "2026-09-18：形态由「物资」改「领域」——仿卡的声望惩罚建立在交锋打出上，而物资卡已退出战斗"
     },
     {
       "id": "imi_fentian",
@@ -1030,7 +1059,12 @@
       "formEntry": "物资",
       "element": "风",
       "description": "风鸢枕下的一袋油，不能吃。",
-      "cost": 20
+      "cost": 20,
+      "yield": {
+        "name": "风鸢油",
+        "quantity": 1,
+        "itemType": "材料"
+      }
     },
     {
       "id": "eq_yingzh",
@@ -1237,7 +1271,12 @@
       "formEntry": "物资",
       "element": "暗",
       "description": "一块折了多次的纸——写过的字会自动从世界任何地方消失。你在它上面写下对手的真名。",
-      "cost": 10
+      "cost": 10,
+      "yield": {
+        "name": "旧纸笺",
+        "quantity": 1,
+        "itemType": "材料"
+      }
     },
     {
       "id": "su_zimangao",
@@ -1246,7 +1285,12 @@
       "formEntry": "物资",
       "element": "暗",
       "description": "一罐涂了才能用的黑膏——抹在语声上，从此再说不出一句真话。",
-      "cost": 20
+      "cost": 20,
+      "yield": {
+        "name": "黑膏",
+        "quantity": 1,
+        "itemType": "材料"
+      }
     },
     {
       "id": "sk_moru",
@@ -1273,7 +1317,12 @@
       "formEntry": "物资",
       "element": "冰",
       "description": "一片冰做的便签，字迹会随着融化慢慢淡去——写的时候要想清楚。",
-      "cost": 10
+      "cost": 10,
+      "yield": {
+        "name": "未写完的冰笺",
+        "quantity": 1,
+        "itemType": "材料"
+      }
     },
     {
       "id": "ld_yejing",
@@ -1318,7 +1367,12 @@
       "formEntry": "物资",
       "element": "水",
       "description": "一卷沉过水的书页，捞起来字还认得，读起来却不像原意。",
-      "cost": 20
+      "cost": 20,
+      "yield": {
+        "name": "沉水书页",
+        "quantity": 1,
+        "itemType": "材料"
+      }
     },
     {
       "id": "sm_shixue",
@@ -1363,7 +1417,12 @@
       "formEntry": "物资",
       "element": "暗",
       "description": "匣里确实空无一物——但你很快发现了一种用法：把不想看到的账单放进去。账单没有被消掉，但你从此想不起来要看它。你现在有两个世界的问题：匣外的问题和匣内的问题。匣内的那些过得挺好。",
-      "cost": 10
+      "cost": 10,
+      "yield": {
+        "name": "空敛尘匣",
+        "quantity": 1,
+        "itemType": "材料"
+      }
     },
     {
       "id": "sk_guifan",
@@ -1417,7 +1476,12 @@
       "formEntry": "物资",
       "element": "金",
       "description": "你把签贴在了家里那台总是半夜自己响的旧闹钟上。闹钟不响了。你很高兴。但从此你家的其他东西开始自己响——先是水壶，然后是门铃，然后是你的关节。你把签取了下来。所有东西都安静了。旧闹钟又响了。你把闹钟电池取了。现在家里只有你自己的心跳在响。你觉得这样反而更安静了。",
-      "cost": 20
+      "cost": 20,
+      "yield": {
+        "name": "法院收容签",
+        "quantity": 1,
+        "itemType": "消耗品"
+      }
     },
     {
       "id": "ld_duincang",
