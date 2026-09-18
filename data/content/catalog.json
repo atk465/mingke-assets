@@ -862,134 +862,120 @@
       "id": "imi_wuminghe",
       "name": "仿·无名河",
       "cardTier": "白银",
-      "formEntry": [
-        "水"
-      ],
+      "formEntry": "领域",
       "element": "沉河砂",
-      "description": [
-        "霜晶",
-        "沉河砂",
-        "灰笺铭石"
-      ],
-      "cost": "河水在这里只有一行。削弱版：仅能短暂改写小股水流。",
+      "description": "河水在这里只有一行。削弱版：仅能短暂改写小股水流。",
+      "cost": 40,
       "imitation": {
         "ofName": "无名河",
-        "materials": 60
+        "materials": [
+          "霜晶",
+          "沉河砂",
+          "灰笺铭石"
+        ]
       }
     },
     {
       "id": "imi_shinianli",
       "name": "仿·失年历",
       "cardTier": "白银",
-      "formEntry": [
-        "暗"
-      ],
+      "formEntry": "物资",
       "element": "霜蜡",
-      "description": [
-        "霜蜡",
-        "白蜡粉",
-        "灰笺铭石"
-      ],
-      "cost": "偷来半天的时间。削弱版：只有半炷香。",
+      "description": "偷来半天的时间。削弱版：只有半炷香。",
+      "cost": 40,
       "imitation": {
         "ofName": "失年历",
-        "materials": 60
+        "materials": [
+          "霜蜡",
+          "白蜡粉",
+          "灰笺铭石"
+        ]
       }
     },
     {
       "id": "imi_fentian",
       "name": "仿·焚天引",
       "cardTier": "鎏金",
-      "formEntry": [
-        "火"
-      ],
+      "formEntry": "技能",
       "element": "烬心石",
-      "description": [
-        "烬心石",
-        "炎心草",
-        "火晶髓"
-      ],
-      "cost": "只燎得动一堵墙。削弱版：威力十不存一，反噬是真的。",
+      "description": "只燎得动一堵墙。削弱版：威力十不存一，反噬是真的。",
+      "cost": 80,
       "imitation": {
         "ofName": "焚天引",
-        "materials": 100
+        "materials": [
+          "烬心石",
+          "炎心草",
+          "火晶髓"
+        ]
       }
     },
     {
       "id": "imi_wanshouyuan",
       "name": "仿·万兽园",
       "cardTier": "鎏金",
-      "formEntry": [
-        "土"
-      ],
+      "formEntry": "领域",
       "element": "兽骨粉",
-      "description": [
-        "兽骨粉",
-        "苔孢鹿角",
-        "地脉髓"
-      ],
-      "cost": "园门开一线，走出一头幼兽。削弱版：园中无兽，只有门。",
+      "description": "园门开一线，走出一头幼兽。削弱版：园中无兽，只有门。",
+      "cost": 80,
       "imitation": {
         "ofName": "万兽园",
-        "materials": 100
+        "materials": [
+          "兽骨粉",
+          "苔孢鹿角",
+          "地脉髓"
+        ]
       }
     },
     {
       "id": "imi_chenxin",
       "name": "仿·称心秤",
       "cardTier": "白银",
-      "formEntry": [
-        "金"
-      ],
+      "formEntry": "装备",
       "element": "称心砝",
-      "description": [
-        "称心砝",
-        "金衡环",
-        "灰笺铭石"
-      ],
-      "cost": "秤得出愿望，付不起价钱。削弱版：只称不换。",
+      "description": "秤得出愿望，付不起价钱。削弱版：只称不换。",
+      "cost": 40,
       "imitation": {
         "ofName": "称心秤",
-        "materials": 60
+        "materials": [
+          "称心砝",
+          "金衡环",
+          "灰笺铭石"
+        ]
       }
     },
     {
       "id": "imi_baila",
       "name": "仿·白蜡城",
       "cardTier": "鎏金",
-      "formEntry": [
-        "冰"
-      ],
+      "formEntry": "领域",
       "element": "白蜡壳",
-      "description": [
-        "白蜡壳",
-        "霜晶",
-        "晶蜥鳞"
-      ],
-      "cost": "封住半条街的黄昏。削弱版：封住的只有自己。",
+      "description": "封住半条街的黄昏。削弱版：封住的只有自己。",
+      "cost": 80,
       "imitation": {
         "ofName": "白蜡城",
-        "materials": 100
+        "materials": [
+          "白蜡壳",
+          "霜晶",
+          "晶蜥鳞"
+        ]
       }
     },
     {
       "id": "imi_diyihang",
       "name": "仿·第一行",
       "cardTier": "星辉",
-      "formEntry": [
-        "光"
-      ],
+      "formEntry": "技能",
       "element": "底石拓片",
-      "description": [
-        "底石拓片",
-        "辉金砂",
-        "晶蜥鳞",
-        "地脉髓"
-      ],
-      "cost": "拓不出神，拓出一道裂缝。最危险的仿品。",
+      "description": "拓不出神，拓出一道裂缝。最危险的仿品。",
+      "cost": 160,
       "imitation": {
         "ofName": "第一行",
-        "materials": 160
+        "materials": [
+          "底石拓片",
+          "辉金砂",
+          "晶蜥鳞",
+          "地脉髓"
+        ]
       }
     },
     {
