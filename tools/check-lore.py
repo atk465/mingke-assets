@@ -61,6 +61,7 @@ BOOK_BANDS = {
     'faction.json': (140, 460),
     'variable.json': (150, 420),
     'extra_setting.json': (140, 420),
+    'character.json': (150, 420),
 }
 # ⑥ 自门控要求
 GATED_BOOKS = {
@@ -71,10 +72,11 @@ GATED_BOOKS = {
     'organization.json',
     'faction.json',
     'variable.json',
+    'character.json',
 }
 # 二/三批待扩写书（显式挂账：全量跑不计入失败，逐条列出提醒）
 PENDING_BOOKS = {
-    'character.json', 'cot.json', 'dlc.json', 'event.json', 'race.json',
+    'cot.json', 'dlc.json', 'event.json', 'race.json',
     'industry.json', 'quick_feature.json', 'extra_setting.json',
 }
 
