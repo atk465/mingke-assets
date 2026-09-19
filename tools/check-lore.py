@@ -25,10 +25,19 @@ BANNED_PATTERNS = [
     r'不是[^。]{0,30}，而是',
     r'与其说[^。]{0,30}，不如说',
 ]
-# ② 长度分档：条目名 → (min, max)；未列名的概念条目走 DEFAULT
+# ② 长度分档：条目名 → (min, max)；未列名的概念条目走书级/全局 DEFAULT
 LENGTH_BANDS = {
     '文风校准': (250, 400),
     'DEFAULT': (220, 420),
+}
+# 书级档位（区域条目 400-600 档；旧种子事实并入后允许到 640）
+BOOK_BANDS = {
+    'adventure_area.json': (380, 660),
+}
+# ⑥ 自门控要求：这些书里的条目必须含 '<%' 门控（常驻豁免名单见 BOOK_CONSTANTS）
+GATED_BOOKS = {
+    'adventure_area.json',
+    'world_setting.json',
 }
 
 
@@ -40,6 +49,8 @@ def check_book(path):
         content = e.get('content', '')
         if not e.get('name'):
             problems.append(f'⑤ 标题缺失 {tag}')
+        if path.name in GATED_BOOKS and not e.get('constant') and '<%' not in content:
+            problems.append(f'⑥ 非常驻条目缺 EJS 自门控 {tag}')
         is_charter = e.get('name') == '文风校准'
         for w in [] if is_charter else BANNED_WORDS:
             if w in content:
@@ -48,7 +59,10 @@ def check_book(path):
             m = re.search(pat, content)
             if m:
                 problems.append(f'① 禁句式「{m.group(0)}」 {tag}')
-        lo, hi = LENGTH_BANDS.get(e.get('name', ''), LENGTH_BANDS['DEFAULT'])
+        band = LENGTH_BANDS.get(e.get('name', ''))
+        if band is None:
+            band = BOOK_BANDS.get(path.name, LENGTH_BANDS['DEFAULT'])
+        lo, hi = band
         # 长度按去标签正文字数
         body = re.sub(r'</?[^>]+>', '', content)
         if not (lo <= len(body) <= hi):
