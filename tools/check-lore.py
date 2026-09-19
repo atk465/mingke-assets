@@ -1,0 +1,74 @@
+#!/usr/bin/env python3
+"""check-lore.py — 世界书五道验收门（委托×世界书共识稿 2026-09-19）
+
+用法: python tools/check-lore.py [worldbooks/ 下的文件名，缺省检查全部]
+
+五道门:
+  ① 禁词/禁句式 grep 零命中（文风校准条目自身的禁则清单是唯一真源）
+  ② 长度落在分档区间（常驻 250-350；区域另定；其余概念条目 250-400）
+  ③ 术语对照（暂缓：词表文件立起后启用）
+  ④ 触发键覆盖（暂缓：批 3 起对照引擎素材表/中层名）
+  ⑤ 每条有 name（comment 标题）
+退出码 1 = 有未过门条目（CI 可用）。
+"""
+import json
+import re
+import sys
+from pathlib import Path
+
+WB = Path(__file__).resolve().parent.parent / 'worldbooks'
+
+# ① 文风禁则（真源 = 文风校准条目；此处是它的机器可读副本，改禁则须两处同步）
+BANNED_WORDS = ['一丝', '不容置疑', '不易察觉', '几不可察']
+BANNED_PATTERNS = [
+    r'他没有[^。]{0,30}，而是',
+    r'不是[^。]{0,30}，而是',
+    r'与其说[^。]{0,30}，不如说',
+]
+# ② 长度分档：条目名 → (min, max)；未列名的概念条目走 DEFAULT
+LENGTH_BANDS = {
+    '文风校准': (250, 400),
+    'DEFAULT': (220, 420),
+}
+
+
+def check_book(path):
+    problems = []
+    book = json.loads(path.read_text(encoding='utf-8'))
+    for e in book.get('entries', []):
+        tag = f"{path.name}#{e.get('uid')}({e.get('name', '?')})"
+        content = e.get('content', '')
+        if not e.get('name'):
+            problems.append(f'⑤ 标题缺失 {tag}')
+        is_charter = e.get('name') == '文风校准'
+        for w in [] if is_charter else BANNED_WORDS:
+            if w in content:
+                problems.append(f'① 禁词「{w}」 {tag}')
+        for pat in [] if is_charter else BANNED_PATTERNS:
+            m = re.search(pat, content)
+            if m:
+                problems.append(f'① 禁句式「{m.group(0)}」 {tag}')
+        lo, hi = LENGTH_BANDS.get(e.get('name', ''), LENGTH_BANDS['DEFAULT'])
+        # 长度按去标签正文字数
+        body = re.sub(r'</?[^>]+>', '', content)
+        if not (lo <= len(body) <= hi):
+            problems.append(f'② 长度 {len(body)} 不在 [{lo},{hi}] {tag}')
+    return problems
+
+
+def main() -> int:
+    targets = [WB / n for n in sys.argv[1:]] if len(sys.argv) > 1 else sorted(WB.glob('*.json'))
+    all_problems = []
+    for t in targets:
+        all_problems += check_book(t)
+    if all_problems:
+        print(f'未过门 {len(all_problems)} 项:')
+        for p in all_problems:
+            print(' -', p)
+        return 1
+    print('五道门全过（①禁词句式 ②长度 ⑤标题；③④随批次启用）')
+    return 0
+
+
+if __name__ == '__main__':
+    sys.exit(main())

@@ -22,7 +22,7 @@ from PIL import Image, ImageFilter
 SEED = 488
 W, H = 1920, 1200
 KM_PER_PX = 1.6
-CONTENT_HASH = 'mingke-map-v1-488'
+CONTENT_HASH = 'mingke-map-v2-488'
 
 rng = random.Random(SEED)
 np_rng = np.random.RandomState(SEED)
@@ -40,15 +40,35 @@ COUNTRIES = [
     {'id': 'country_wild', 'name': '无主之地', 'color': [128, 122, 112], 'unclaimed': True, 'anchorTileId': 26},
 ]
 MIDTIERS = [
-    {'id': 'mid_jingji', 'name': '冕京京畿', 'countryId': 'country_empire', 'climateId': 'climate_temperate', 'anchorTileId': 2},
-    {'id': 'mid_dongjing', 'name': '东境', 'countryId': 'country_empire', 'climateId': 'climate_temperate', 'anchorTileId': 3},
-    {'id': 'mid_nanjing', 'name': '南境', 'countryId': 'country_empire', 'climateId': 'climate_coastal', 'anchorTileId': 5},
-    {'id': 'mid_xinong', 'name': '西畿农带', 'countryId': 'country_empire', 'climateId': 'climate_temperate', 'anchorTileId': 6},
+    {'id': 'mid_jingji', 'name': '冕京京畿', 'countryId': 'country_empire', 'climateId': 'climate_temperate', 'anchorTileId': 1,
+     'gathering': {'specialty': '御灵草', 'danger': 0, 'materialTable': {0: ['晨露草'], 2: ['贡园芝']}}},
+    {'id': 'mid_dongjing', 'name': '东境', 'countryId': 'country_empire', 'climateId': 'climate_temperate', 'anchorTileId': 4,
+     'gathering': {'specialty': '铁线蕨', 'danger': 1, 'materialTable': {0: ['铁线蕨'], 2: ['哨堡艾草']}}},
+    {'id': 'mid_xinong', 'name': '西畿农带', 'countryId': 'country_empire', 'climateId': 'climate_temperate', 'anchorTileId': 7,
+     'gathering': {'specialty': '麦金灵穗', 'danger': 0, 'materialTable': {0: ['金穗'], 2: ['田灵米']}}},
+    {'id': 'mid_nanjing', 'name': '南境', 'countryId': 'country_empire', 'climateId': 'climate_coastal', 'anchorTileId': 10,
+     'gathering': {'specialty': '盐晶海产', 'danger': 1, 'materialTable': {1: ['盐晶贝'], 3: ['潮心珠']}}},
     {'id': 'mid_val_core', 'name': '公国本部', 'countryId': 'country_valentia', 'climateId': 'climate_temperate', 'anchorTileId': 13},
-    {'id': 'mid_val_north', 'name': '公国北境', 'countryId': 'country_valentia', 'climateId': 'climate_cold', 'anchorTileId': 15},
-    {'id': 'mid_wuminglu', 'name': '无名录', 'countryId': 'country_wild', 'climateId': 'climate_harsh', 'anchorTileId': 26},
-    {'id': 'mid_liesi', 'name': '底石裂隙', 'countryId': 'country_wild', 'climateId': 'climate_harsh', 'anchorTileId': 28},
-    {'id': 'mid_sea', 'name': '环陆海域', 'countryId': 'country_wild', 'climateId': 'climate_coastal', 'anchorTileId': 33},
+    {'id': 'mid_val_north', 'name': '灰笺乡', 'countryId': 'country_valentia', 'climateId': 'climate_cold', 'anchorTileId': 16,
+     'gathering': {'specialty': '灰笺矿', 'danger': 2, 'materialTable': {1: ['灰笺矿'], 3: ['灰笺深髓']}}},
+    {'id': 'mid_val_forest', 'name': '菌孢深林', 'countryId': 'country_valentia', 'climateId': 'climate_cold', 'anchorTileId': 18,
+     'gathering': {'specialty': '菌孢', 'danger': 4, 'materialTable': {2: ['菌孢绒'], 3: ['夜光菌母'], 4: ['菌灵心']}}},
+    {'id': 'mid_wumilu_edge', 'name': '无名录·边缘', 'countryId': 'country_wild', 'climateId': 'climate_harsh', 'anchorTileId': 21,
+     'gathering': {'specialty': '遗迹残片', 'danger': 3, 'materialTable': {1: ['无名残铁'], 2: ['界碑尘']}}},
+    {'id': 'mid_wumilu_core', 'name': '无名录·腹地', 'countryId': 'country_wild', 'climateId': 'climate_harsh', 'anchorTileId': 22,
+     'gathering': {'specialty': '灭铭残片', 'danger': 5, 'materialTable': {3: ['灭铭渣'], 4: ['灭铭核心']}}},
+    {'id': 'mid_liesi', 'name': '底石裂隙', 'countryId': 'country_wild', 'climateId': 'climate_harsh', 'anchorTileId': 23,
+     'gathering': {'specialty': '铭石原矿', 'danger': 5, 'materialTable': {2: ['底石原矿'], 3: ['铭髓'], 4: ['星髓底石']}}},
+    {'id': 'mid_shuangsi', 'name': '霜颸北境', 'countryId': 'country_wild', 'climateId': 'climate_cold', 'anchorTileId': 24,
+     'gathering': {'specialty': '霜颸', 'danger': 2, 'materialTable': {1: ['霜颸花'], 3: ['颸冰晶']}}},
+    {'id': 'mid_yeming', 'name': '野铭者谷地', 'countryId': 'country_wild', 'climateId': 'climate_harsh', 'anchorTileId': 25,
+     'gathering': {'specialty': '野铭', 'danger': 3, 'materialTable': {2: ['野铭碎片'], 3: ['逃铭晶']}}},
+    {'id': 'mid_sea_near', 'name': '环陆近海', 'countryId': 'country_wild', 'climateId': 'climate_coastal', 'anchorTileId': 26,
+     'gathering': {'specialty': '月蚌', 'danger': 1, 'materialTable': {0: ['月蚌'], 2: ['潮铃']}}},
+    {'id': 'mid_sea_rift', 'name': '裂隙外海', 'countryId': 'country_wild', 'climateId': 'climate_coastal', 'anchorTileId': 30,
+     'gathering': {'specialty': '裂海深产', 'danger': 4, 'materialTable': {3: ['裂渊鳞'], 4: ['深海铭藻']}}},
+    {'id': 'mid_sea_deep', 'name': '无垠远洋', 'countryId': 'country_wild', 'climateId': 'climate_coastal', 'anchorTileId': 31,
+     'gathering': {'specialty': '远洋巨产', 'danger': 3, 'materialTable': {2: ['巨鲸骨'], 4: ['海心核']}}},
 ]
 
 CLIMATES = {
@@ -103,24 +123,24 @@ TILES = [
     T(name='公国农田', terrain='农田', water=None, imp=False, c='country_valentia', m='mid_val_core', x=0.27, y=0.44, dev=5),
     T(name='灰笺老街', terrain='城镇', water=None, imp=False, c='country_valentia', m='mid_val_north', x=0.30, y=0.24, dev=5),
     T(name='灰笺矿区', terrain='山脉', water=None, imp=False, c='country_valentia', m='mid_val_north', x=0.27, y=0.18, dev=6),
-    T(name='菌孢林', terrain='森林', water=None, imp=False, c='country_valentia', m='mid_val_north', x=0.22, y=0.28, dev=2),
+    T(name='菌孢林', terrain='森林', water=None, imp=False, c='country_valentia', m='mid_val_forest', x=0.22, y=0.28, dev=2),
     T(name='西部海岸', terrain='海岸', water=None, imp=False, c='country_valentia', m='mid_val_core', x=0.22, y=0.42, dev=4),
-    T(name='北境山口', terrain='峡谷', water=None, imp=False, c='country_valentia', m='mid_val_north', x=0.24, y=0.12, dev=2),
+    T(name='北境山口', terrain='峡谷', water=None, imp=False, c='country_valentia', m='mid_val_forest', x=0.24, y=0.12, dev=2),
     # ── 特殊/无主 ──
-    T(name='无名录边缘', terrain='荒地', water=None, imp=False, c='country_wild', m='mid_wuminglu', x=0.84, y=0.40, dev=1),
-    T(name='无名录腹地', terrain='荒地', water=None, imp=True, c='country_wild', m='mid_wuminglu', x=0.90, y=0.44, dev=1),
+    T(name='无名录边缘', terrain='荒地', water=None, imp=False, c='country_wild', m='mid_wumilu_edge', x=0.84, y=0.40, dev=1),
+    T(name='无名录腹地', terrain='荒地', water=None, imp=True, c='country_wild', m='mid_wumilu_core', x=0.90, y=0.44, dev=1),
     T(name='底石裂隙', terrain='峡谷', water=None, imp=True, c='country_wild', m='mid_liesi', x=0.12, y=0.08, dev=1),
-    T(name='霜颸北境', terrain='苔原', water=None, imp=False, c='country_wild', m='mid_liesi', x=0.18, y=0.04, dev=1),
-    T(name='野铭者谷地', terrain='峡谷', water=None, imp=False, c='country_wild', m='mid_liesi', x=0.16, y=0.14, dev=2),
+    T(name='霜颸北境', terrain='苔原', water=None, imp=False, c='country_wild', m='mid_shuangsi', x=0.18, y=0.04, dev=1),
+    T(name='野铭者谷地', terrain='峡谷', water=None, imp=False, c='country_wild', m='mid_yeming', x=0.16, y=0.14, dev=2),
     # ── 海域 ──
-    T(name='南部近海', terrain='近海', water='sea', imp=False, c='country_wild', m='mid_sea', x=0.60, y=0.72, dev=None),
-    T(name='东南近海', terrain='近海', water='sea', imp=False, c='country_wild', m='mid_sea', x=0.86, y=0.66, dev=None),
-    T(name='西部近海', terrain='近海', water='sea', imp=False, c='country_wild', m='mid_sea', x=0.10, y=0.52, dev=None),
-    T(name='北部近海', terrain='近海', water='sea', imp=False, c='country_wild', m='mid_sea', x=0.55, y=0.03, dev=None),
-    T(name='裂隙外海', terrain='近海', water='sea', imp=False, c='country_wild', m='mid_sea', x=0.06, y=0.20, dev=None),
-    T(name='南方远洋', terrain='远洋', water='sea', imp=False, c='country_wild', m='mid_sea', x=0.42, y=0.88, dev=None),
-    T(name='东南远洋', terrain='远洋', water='sea', imp=False, c='country_wild', m='mid_sea', x=0.78, y=0.90, dev=None),
-    T(name='西方远洋', terrain='远洋', water='sea', imp=False, c='country_wild', m='mid_sea', x=0.03, y=0.80, dev=None),
+    T(name='南部近海', terrain='近海', water='sea', imp=False, c='country_wild', m='mid_sea_near', x=0.60, y=0.72, dev=None),
+    T(name='东南近海', terrain='近海', water='sea', imp=False, c='country_wild', m='mid_sea_near', x=0.86, y=0.66, dev=None),
+    T(name='西部近海', terrain='近海', water='sea', imp=False, c='country_wild', m='mid_sea_near', x=0.10, y=0.52, dev=None),
+    T(name='北部近海', terrain='近海', water='sea', imp=False, c='country_wild', m='mid_sea_near', x=0.55, y=0.03, dev=None),
+    T(name='裂隙外海', terrain='近海', water='sea', imp=False, c='country_wild', m='mid_sea_rift', x=0.06, y=0.20, dev=None),
+    T(name='南方远洋', terrain='远洋', water='sea', imp=False, c='country_wild', m='mid_sea_deep', x=0.42, y=0.88, dev=None),
+    T(name='东南远洋', terrain='远洋', water='sea', imp=False, c='country_wild', m='mid_sea_deep', x=0.78, y=0.90, dev=None),
+    T(name='西方远洋', terrain='远洋', water='sea', imp=False, c='country_wild', m='mid_sea_deep', x=0.03, y=0.80, dev=None),
 ]
 
 PLACE_BINDINGS = {
