@@ -4,7 +4,11 @@
 > 去关联工程（世界观众名词替换）已立项，见 docs/canon.md v1.3+ 备注。
 
 《铭刻录》（引擎仓 `IndependentFront-for-destined-journey`）的**正式内容包真源**。
-产出单 JSON 内容包 `fated-poem-pack-<semver>.json`（packId `fated-poem-official`），经引擎设置页导入安装。
+产出单 JSON 内容包 `narrative-pack-<semver>.json`（packId `narrative-official`），经引擎设置页导入安装。
+
+> 🔴 packId 已于 2026-09-20 随引擎仓"去 fated-poem 化"改名（`fated-poem-official` → `narrative-official`）。
+> 引擎侧对装着旧 id 官方包的存档做了读取迁移与备份依赖映射，见引擎仓 `types-content.ts` 的
+> `LEGACY_PACK_ID_MAP` 与 `docs/planning/2026-09-20-universal-frontend-rename-map.md`（改名映射表）。
 
 ## 目录形状（= 引擎 URL 约定，D14/D15）
 

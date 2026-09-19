@@ -21,7 +21,7 @@ function argOf(name, dflt) {
   const i = args.indexOf(name);
   return i >= 0 && args[i + 1] ? args[i + 1] : dflt;
 }
-const VERSION = argOf('--version', '2.8.0');
+const VERSION = argOf('--version', '2.9.0');
 const OUT_DIR = join(ROOT, argOf('--out', 'dist'));
 
 /** 收集时剥掉所有 $comment 注释键（递归） */
@@ -72,7 +72,7 @@ if (existsSync(WB_DIR)) {
 const contentDir = join(ROOT, 'data', 'content');
 const pack = {
   formatVersion: 1,
-  packId: 'fated-poem-official',
+  packId: 'narrative-official',
   packVersion: VERSION,
   name: '《铭刻录》正式内容包',
   description: '铭刻纪元的世界真源：14 本世界书、目录池、事件委托、agent 默认层与品牌面。',
@@ -133,7 +133,7 @@ if (errors.length > 0) {
   process.exit(1);
 }
 mkdirSync(OUT_DIR, { recursive: true });
-const outFile = join(OUT_DIR, `fated-poem-pack-${VERSION}.json`);
+const outFile = join(OUT_DIR, `narrative-pack-${VERSION}.json`);
 writeFileSync(outFile, JSON.stringify(pack, null, 2) + '\n', 'utf8');
 const kb = (Buffer.byteLength(JSON.stringify(pack)) / 1024).toFixed(1);
 const counts = [];
