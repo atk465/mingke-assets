@@ -34,12 +34,14 @@ LENGTH_BANDS = {
 BOOK_BANDS = {
     'adventure_area.json': (380, 660),
     'material_lore.json': (200, 340),
+    'monster_ecology.json': (250, 420),
 }
 # ⑥ 自门控要求：这些书里的条目必须含 '<%' 门控
 GATED_BOOKS = {
     'adventure_area.json',
     'world_setting.json',
     'material_lore.json',
+    'monster_ecology.json',
 }
 
 
