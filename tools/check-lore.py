@@ -30,14 +30,16 @@ LENGTH_BANDS = {
     '文风校准': (250, 400),
     'DEFAULT': (220, 420),
 }
-# 书级档位（区域条目 400-600 档；旧种子事实并入后允许到 640）
+# 书级档位（区域 380-660；素材 200-340——共识档 200-300 并入族内事实后放宽上限）
 BOOK_BANDS = {
     'adventure_area.json': (380, 660),
+    'material_lore.json': (200, 340),
 }
-# ⑥ 自门控要求：这些书里的条目必须含 '<%' 门控（常驻豁免名单见 BOOK_CONSTANTS）
+# ⑥ 自门控要求：这些书里的条目必须含 '<%' 门控
 GATED_BOOKS = {
     'adventure_area.json',
     'world_setting.json',
+    'material_lore.json',
 }
 
 
