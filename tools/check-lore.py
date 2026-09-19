@@ -35,6 +35,10 @@ BOOK_BANDS = {
     'adventure_area.json': (380, 660),
     'material_lore.json': (200, 340),
     'monster_ecology.json': (250, 420),
+    'organization.json': (200, 460),
+    'faction.json': (140, 460),
+    'variable.json': (150, 420),
+    'extra_setting.json': (140, 420),
 }
 # ⑥ 自门控要求：这些书里的条目必须含 '<%' 门控
 GATED_BOOKS = {
@@ -42,6 +46,9 @@ GATED_BOOKS = {
     'world_setting.json',
     'material_lore.json',
     'monster_ecology.json',
+    'organization.json',
+    'faction.json',
+    'variable.json',
 }
 
 
