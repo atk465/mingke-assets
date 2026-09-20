@@ -65,6 +65,7 @@ BOOK_BANDS = {
     'race.json': (150, 480),
     'event.json': (140, 420),
     'industry.json': (140, 420),
+    'dlc.json': (150, 520),
 }
 # ⑥ 自门控要求
 GATED_BOOKS = {
@@ -79,10 +80,11 @@ GATED_BOOKS = {
     'race.json',
     'event.json',
     'industry.json',
+    'dlc.json',
 }
 # 二/三批待扩写书（显式挂账：全量跑不计入失败，逐条列出提醒）
 PENDING_BOOKS = {
-    'cot.json', 'dlc.json', 'quick_feature.json', 'extra_setting.json',
+    'cot.json', 'quick_feature.json', 'extra_setting.json',
 }
 
 # 剔除 EJS 门控与标签后的正文体（长度/句式/复读统计共用）
