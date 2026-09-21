@@ -146,6 +146,39 @@ def check_book(path):
     return problems
 
 
+# ⑨ 起始地点对表（2026-09-19）：catalog.json 起始地树叶子的路径末段必须是
+#    map-pack.json 里真实存在的地块名——防「御道枢纽」式过时项（内容改了地图，
+#    起始地树忘了跟）。
+def check_start_locations() -> list:
+    problems = []
+    cat_path = WB.parent / 'data' / 'content' / 'catalog.json'
+    map_path = WB.parent / 'data' / 'content' / 'map-pack.json'
+    if not cat_path.exists() or not map_path.exists():
+        return problems
+    cat = json.loads(cat_path.read_text(encoding='utf-8'))
+    mp = json.loads(map_path.read_text(encoding='utf-8'))
+    tile_names = {t.get('name') for t in mp.get('tiles', [])}
+    forbidden_zones = {
+        t.get('name') for t in mp.get('tiles', []) if t.get('impassable')
+    }
+    def leaves(nodes):
+        out = []
+        for n in nodes:
+            if n.get('children'):
+                out += leaves(n['children'])
+            else:
+                out.append(n)
+        return out
+    for leaf_node in leaves(cat.get('startLocations', [])):
+        value = str(leaf_node.get('value', ''))
+        last = value.split('-')[-1]
+        if last not in tile_names:
+            problems.append(f'⑨ 起始地点「{leaf_node.get("label")}」末段「{last}」不是地图地块名')
+        elif last in forbidden_zones:
+            problems.append(f'⑨ 起始地点「{leaf_node.get("label")}」落在不可通行地块上')
+    return problems
+
+
 def main() -> int:
     targets = [WB / n for n in sys.argv[1:]] if len(sys.argv) > 1 else sorted(WB.glob('*.json'))
     all_problems = []
@@ -156,6 +189,7 @@ def main() -> int:
             pending_problems += problems
         else:
             all_problems += problems
+    all_problems += check_start_locations()
     if pending_problems:
         print(f'（挂账：二/三批待扩写书 {len(pending_problems)} 项，不阻塞门禁）')
     if all_problems:
@@ -163,7 +197,7 @@ def main() -> int:
         for p in all_problems:
             print(' -', p)
         return 1
-    print('验收门全过（①禁词句式 ②长度上限 ⑤标题 ⑥自门控 ⑦句式限频 ⑧凑字数；③④随批次启用）')
+    print('验收门全过（①禁词句式 ②长度上限 ⑤标题 ⑥自门控 ⑦句式限频 ⑧凑字数 ⑨起始地对表；③④随批次启用）')
     return 0
 
 
