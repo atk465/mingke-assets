@@ -66,6 +66,8 @@ BOOK_BANDS = {
     'event.json': (140, 420),
     'industry.json': (140, 420),
     'dlc.json': (150, 520),
+    # 天赋词：条目=描述原文+机制口径，描述长短随目录，下限放宽
+    'talent_glossary.json': (80, 560),
 }
 # ⑥ 自门控要求
 GATED_BOOKS = {
@@ -81,6 +83,7 @@ GATED_BOOKS = {
     'event.json',
     'industry.json',
     'dlc.json',
+    'talent_glossary.json',
 }
 # 二/三批待扩写书（显式挂账：全量跑不计入失败，逐条列出提醒）
 PENDING_BOOKS = {
