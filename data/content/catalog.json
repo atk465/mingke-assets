@@ -816,7 +816,16 @@
       "companion": {
         "race": "岩甲古龙裔",
         "temperament": "寡言护主，蹲下时比站着高"
-      }
+      },
+      "effects": [
+        {
+          "trigger": "打出时",
+          "target": "自身",
+          "action": "护盾",
+          "value": 6,
+          "duration": 3
+        }
+      ]
     },
     {
       "id": "sm_yanmao",
@@ -829,7 +838,16 @@
       "companion": {
         "race": "焰鬃狮族",
         "temperament": "骄傲，认输但不认错"
-      }
+      },
+      "effects": [
+        {
+          "trigger": "每拍",
+          "target": "敌单体",
+          "action": "灼烧",
+          "value": 4,
+          "duration": 2
+        }
+      ]
     },
     {
       "id": "sm_leijiao",
@@ -842,7 +860,15 @@
       "companion": {
         "race": "雷角麋族",
         "temperament": "认第一声雷当娘"
-      }
+      },
+      "effects": [
+        {
+          "trigger": "打出时",
+          "target": "敌单体",
+          "action": "连击",
+          "value": 50
+        }
+      ]
     },
     {
       "id": "sm_wuyuan",
@@ -855,7 +881,16 @@
       "companion": {
         "race": "沉歌鲛族",
         "temperament": "三年说一句话，句句算数"
-      }
+      },
+      "effects": [
+        {
+          "trigger": "每拍",
+          "target": "敌单体",
+          "action": "迟缓",
+          "value": 3,
+          "duration": 2
+        }
+      ]
     },
     {
       "id": "sm_shuangsi",
@@ -868,7 +903,16 @@
       "companion": {
         "race": "霜颸鹿族",
         "temperament": "温柔的固执，拦路时绝不侧身"
-      }
+      },
+      "effects": [
+        {
+          "trigger": "每拍",
+          "target": "敌单体",
+          "action": "冰冻",
+          "value": 2,
+          "duration": 2
+        }
+      ]
     },
     {
       "id": "sm_panyuan",
@@ -881,7 +925,23 @@
       "companion": {
         "race": "磐垣龟族",
         "temperament": "慢，但从不迟到"
-      }
+      },
+      "effects": [
+        {
+          "trigger": "打出时",
+          "target": "自身",
+          "action": "护盾",
+          "value": 8,
+          "duration": 3
+        },
+        {
+          "trigger": "每拍",
+          "target": "自身",
+          "action": "格挡",
+          "value": 4,
+          "duration": 1
+        }
+      ]
     },
     {
       "id": "sm_tieyu",
@@ -925,7 +985,16 @@
       "formEntry": "领域",
       "element": "暗",
       "description": "一片被抹去的国土的最后一块界碑。",
-      "cost": 80
+      "cost": 80,
+      "effects": [
+        {
+          "trigger": "每拍",
+          "target": "敌单体",
+          "action": "易伤",
+          "value": 25,
+          "duration": 2
+        }
+      ]
     },
     {
       "id": "ld_miyuan",
@@ -952,7 +1021,16 @@
       "formEntry": "领域",
       "element": "暗",
       "description": "世界的语法出错的地方。看一眼，终身难忘。",
-      "cost": 160
+      "cost": 160,
+      "effects": [
+        {
+          "trigger": "每拍",
+          "target": "敌单体",
+          "action": "眩晕",
+          "value": 0,
+          "duration": 1
+        }
+      ]
     },
     {
       "id": "ld_laojie",
@@ -1013,7 +1091,22 @@
           "炎心草",
           "火晶髓"
         ]
-      }
+      },
+      "effects": [
+        {
+          "trigger": "打出时",
+          "target": "敌单体",
+          "action": "伤害",
+          "value": 8
+        },
+        {
+          "trigger": "每拍",
+          "target": "敌单体",
+          "action": "灼烧",
+          "value": 4,
+          "duration": 2
+        }
+      ]
     },
     {
       "id": "imi_wanshouyuan",
@@ -1030,7 +1123,16 @@
           "苔孢鹿角",
           "地脉髓"
         ]
-      }
+      },
+      "effects": [
+        {
+          "trigger": "每拍",
+          "target": "敌单体",
+          "action": "流血",
+          "value": 2,
+          "duration": 3
+        }
+      ]
     },
     {
       "id": "imi_chenxin",
@@ -1064,7 +1166,16 @@
           "霜晶",
           "晶蜥鳞"
         ]
-      }
+      },
+      "effects": [
+        {
+          "trigger": "打出时",
+          "target": "自身",
+          "action": "护盾",
+          "value": 6,
+          "duration": 2
+        }
+      ]
     },
     {
       "id": "imi_diyihang",
@@ -1082,7 +1193,22 @@
           "晶蜥鳞",
           "地脉髓"
         ]
-      }
+      },
+      "effects": [
+        {
+          "trigger": "打出时",
+          "target": "敌单体",
+          "action": "破防",
+          "value": 4
+        },
+        {
+          "trigger": "每拍",
+          "target": "敌单体",
+          "action": "易伤",
+          "value": 25,
+          "duration": 1
+        }
+      ]
     },
     {
       "id": "eq_bizuan",
@@ -1186,7 +1312,21 @@
       "formEntry": "技能",
       "element": "暗",
       "description": "把最重的一击分作三拍递出——听者只来得及退半步。",
-      "cost": 80
+      "cost": 80,
+      "effects": [
+        {
+          "trigger": "打出时",
+          "target": "敌单体",
+          "action": "连击",
+          "value": 50
+        },
+        {
+          "trigger": "打出时",
+          "target": "敌单体",
+          "action": "伤害",
+          "value": 4
+        }
+      ]
     },
     {
       "id": "eq_fengxiang",
@@ -1195,7 +1335,16 @@
       "formEntry": "装备",
       "element": "风",
       "description": "风隼战团的佩甲中件，穿上它才知道什么叫“上下同身”。",
-      "cost": 80
+      "cost": 80,
+      "effects": [
+        {
+          "trigger": "打出时",
+          "target": "自身",
+          "action": "护盾",
+          "value": 4,
+          "duration": 3
+        }
+      ]
     },
     {
       "id": "eq_xingfan",
@@ -1204,7 +1353,23 @@
       "formEntry": "装备",
       "element": "光",
       "description": "看名字像水上風帆，其实是造于心上的错金。",
-      "cost": 160
+      "cost": 160,
+      "effects": [
+        {
+          "trigger": "打出时",
+          "target": "自身",
+          "action": "护盾",
+          "value": 4,
+          "duration": 3
+        },
+        {
+          "trigger": "每拍",
+          "target": "敌单体",
+          "action": "迟缓",
+          "value": 2,
+          "duration": 2
+        }
+      ]
     },
     {
       "id": "ld_bendong",
@@ -1213,7 +1378,16 @@
       "formEntry": "领域",
       "element": "光",
       "description": "帝都最不起眼的那一巷——却什么都流到过。",
-      "cost": 160
+      "cost": 160,
+      "effects": [
+        {
+          "trigger": "每拍",
+          "target": "自身",
+          "action": "治疗",
+          "value": 6,
+          "duration": 2
+        }
+      ]
     },
     {
       "id": "sk_siyu",
@@ -1222,7 +1396,15 @@
       "formEntry": "技能",
       "element": "光",
       "description": "一念顶上三天——能在最制的内斗里只平一合。",
-      "cost": 160
+      "cost": 160,
+      "effects": [
+        {
+          "trigger": "打出时",
+          "target": "敌单体",
+          "action": "连击",
+          "value": 50
+        }
+      ]
     },
     {
       "id": "ld_yuanqi",
@@ -1231,7 +1413,15 @@
       "formEntry": "领域",
       "element": "暗",
       "description": "世界底石第一行被写下的那一口坑。谁下去谁取不出一张原貌。",
-      "cost": 160
+      "cost": 160,
+      "effects": [
+        {
+          "trigger": "打出时",
+          "target": "敌单体",
+          "action": "破防",
+          "value": 6
+        }
+      ]
     },
     {
       "id": "sm_yinchan",
@@ -1240,7 +1430,23 @@
       "formEntry": "召唤",
       "element": "水",
       "description": "从底石裂隙的某口坑里涌出——鼓膜先于眼睛察觉到。满身的黏膜会自动反光。",
-      "cost": 80
+      "cost": 80,
+      "effects": [
+        {
+          "trigger": "每拍",
+          "target": "敌单体",
+          "action": "迟缓",
+          "value": 3,
+          "duration": 3
+        },
+        {
+          "trigger": "打出时",
+          "target": "自身",
+          "action": "护盾",
+          "value": 4,
+          "duration": 2
+        }
+      ]
     },
     {
       "id": "sm_roujian",
@@ -1249,7 +1455,16 @@
       "formEntry": "召唤",
       "element": "暗",
       "description": "一座用人的口与臂交织成的塔——越登越高，身份越模糊。召唤时它会以最后那个名字叫你。",
-      "cost": 160
+      "cost": 160,
+      "effects": [
+        {
+          "trigger": "每拍",
+          "target": "敌单体",
+          "action": "中毒",
+          "value": 3,
+          "duration": 3
+        }
+      ]
     },
     {
       "id": "sm_changhua",
@@ -1258,7 +1473,16 @@
       "formEntry": "召唤",
       "element": "冰",
       "description": "它以人皮为扉，以冰为书。一开口，谷里的人便不再记得上一句话。",
-      "cost": 160
+      "cost": 160,
+      "effects": [
+        {
+          "trigger": "每拍",
+          "target": "敌单体",
+          "action": "冰冻",
+          "value": 2,
+          "duration": 2
+        }
+      ]
     },
     {
       "id": "ld_bendong",
@@ -1285,7 +1509,16 @@
       "formEntry": "领域",
       "element": "暗",
       "description": "这片林子没有方向——你的指南针永远缺一个数字，脚下的雪在你不看的时候多了一层。",
-      "cost": 160
+      "cost": 160,
+      "effects": [
+        {
+          "trigger": "每拍",
+          "target": "敌单体",
+          "action": "迟缓",
+          "value": 4,
+          "duration": 2
+        }
+      ]
     },
     {
       "id": "sk_bushiq",
@@ -1312,7 +1545,16 @@
       "formEntry": "技能",
       "element": "火",
       "description": "一句回应，直接撕裂对方的应招链。代价是：你必须知道对方的真名。",
-      "cost": 80
+      "cost": 80,
+      "effects": [
+        {
+          "trigger": "打出时",
+          "target": "敌单体",
+          "action": "眩晕",
+          "value": 0,
+          "duration": 1
+        }
+      ]
     },
     {
       "id": "eq_eyepatch",
@@ -1567,7 +1809,15 @@
       "formEntry": "领域",
       "element": "暗",
       "description": "禁录库最深的一层。守卫换班时从不回头看库门——库门也不看他们。",
-      "cost": 160
+      "cost": 160,
+      "effects": [
+        {
+          "trigger": "打出时",
+          "target": "自身",
+          "action": "净化",
+          "value": 8
+        }
+      ]
     },
     {
       "id": "sk_duince",
@@ -1576,7 +1826,23 @@
       "formEntry": "技能",
       "element": "暗",
       "description": "你用了。对手最危险的那一手被你从记忆里删了。你赢了。但你到现在都不知道他当时要干什么。你后来又遇到了他。他问你：「上次那一下你还记得吗？」你说不记得。他说：「那就好——我也不记得了。」你们俩坐在那里想了很久，都想不起来。但你们都觉得那次很危险。",
-      "cost": 80
+      "cost": 80,
+      "effects": [
+        {
+          "trigger": "每拍",
+          "target": "敌单体",
+          "action": "眩晕",
+          "value": 0,
+          "duration": 1
+        },
+        {
+          "trigger": "每拍",
+          "target": "敌单体",
+          "action": "易伤",
+          "value": 25,
+          "duration": 1
+        }
+      ]
     },
     {
       "id": "eq_mingguan",
@@ -1585,7 +1851,15 @@
       "formEntry": "装备",
       "element": "暗",
       "description": "你把一张不干净的卡放了进去。棺上没有锁。但从此你每次经过它的时候都会走得很快。不是怕它出来——是怕它跟你说话。它从来没说过。但你总觉得它只是还没找到你想听的话题。",
-      "cost": 80
+      "cost": 80,
+      "effects": [
+        {
+          "trigger": "打出时",
+          "target": "敌单体",
+          "action": "吸血",
+          "value": 10
+        }
+      ]
     },
     {
       "id": "eq_wuyin",
@@ -1594,7 +1868,23 @@
       "formEntry": "装备",
       "element": "光",
       "description": "铭法院五位创院者各留一印，合于一环。戴上它，你说的每句话都自动成为「记录」——而记录就是事实。",
-      "cost": 160
+      "cost": 160,
+      "effects": [
+        {
+          "trigger": "打出时",
+          "target": "自身",
+          "action": "护盾",
+          "value": 6,
+          "duration": 3
+        },
+        {
+          "trigger": "每拍",
+          "target": "自身",
+          "action": "治疗",
+          "value": 4,
+          "duration": 2
+        }
+      ]
     }
   ],
   "femaleOnlyIdentities": [
