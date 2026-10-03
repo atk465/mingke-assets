@@ -1,5 +1,5 @@
 {
-  "$comment": "《铭刻录》正式内容包 catalog —— cardPool 含开局购卡/巨兽召唤/禁忌仿卡/名所地景 4 类；五档品质（白铁 10 / 青铜 20 / 白银 40 / 鎏金 80 / 星辉 160 点）齐覆盖",
+  "$comment": "《铭刻录》正式内容包 catalog —— cardPool 含开局购卡/巨兽召唤/禁忌仿卡/名所地景 4 类；五档品质（黑铁 10 / 青铜 20 / 白银 40 / 鎏金 80 / 星辉 160 点）齐覆盖",
   "version": 1,
   "equipmentPool": [
     {
@@ -568,7 +568,7 @@
     {
       "id": "eq_yayu",
       "name": "鸦羽轻铠",
-      "cardTier": "白铁",
+      "cardTier": "黑铁",
       "formEntry": "装备",
       "description": "以鸦羽织就的轻铠，铭着「不坠」。每拍加持。",
       "cost": 10,
@@ -586,7 +586,7 @@
     {
       "id": "eq_denglong",
       "name": "引路人的提灯",
-      "cardTier": "白铁",
+      "cardTier": "黑铁",
       "formEntry": "装备",
       "description": "官方道里程碑同款铭样，照亮且被记住。",
       "cost": 10,
@@ -613,7 +613,7 @@
     {
       "id": "eq_kuanggao",
       "name": "灰笺矿镐",
-      "cardTier": "白铁",
+      "cardTier": "黑铁",
       "formEntry": "装备",
       "description": "灰笺矿脉的制式镐，对石头格外讲道理。",
       "cost": 10,
@@ -622,7 +622,7 @@
     {
       "id": "sk_huozhe",
       "name": "火折子",
-      "cardTier": "白铁",
+      "cardTier": "黑铁",
       "formEntry": "技能",
       "description": "把一炉火折进一行字里的老手艺。",
       "cost": 10,
@@ -658,7 +658,7 @@
     {
       "id": "sk_yongjin",
       "name": "咏金调",
-      "cardTier": "白铁",
+      "cardTier": "黑铁",
       "formEntry": "技能",
       "description": "一段押韵的短调，唱给卡听。",
       "cost": 10,
@@ -703,7 +703,7 @@
     {
       "id": "ld_dengshi",
       "name": "灯市夜话",
-      "cardTier": "白铁",
+      "cardTier": "黑铁",
       "formEntry": "领域",
       "description": "艾瑟嘉德灯市的一角，听故事的人越多越亮。",
       "cost": 10,
@@ -730,7 +730,7 @@
     {
       "id": "su_bidai",
       "name": "帝冕币袋",
-      "cardTier": "白铁",
+      "cardTier": "黑铁",
       "formEntry": "物资",
       "description": "一小袋铸着铭冕纹的币。打出即折算。",
       "cost": 10,
@@ -741,7 +741,7 @@
     {
       "id": "su_ganliang",
       "name": "干粮定数",
-      "cardTier": "白铁",
+      "cardTier": "黑铁",
       "formEntry": "物资",
       "description": "三天的口粮，一张卡管饱——用卡直接回复 30 SP。",
       "cost": 10,
@@ -768,7 +768,7 @@
     {
       "id": "su_yizhan",
       "name": "驿站通行签",
-      "cardTier": "白铁",
+      "cardTier": "黑铁",
       "formEntry": "物资",
       "description": "官道驿站的加急签，写着「勿拦」。",
       "cost": 10,
@@ -1213,7 +1213,7 @@
     {
       "id": "eq_bizuan",
       "name": "壁钻锤",
-      "cardTier": "白铁",
+      "cardTier": "黑铁",
       "formEntry": "装备",
       "element": "土",
       "description": "矮匠人爱用的小锤，替主人收一批回扣料。",
@@ -1222,7 +1222,7 @@
     {
       "id": "eq_yunshui",
       "name": "运水囊",
-      "cardTier": "白铁",
+      "cardTier": "黑铁",
       "formEntry": "装备",
       "element": "水",
       "description": "双肩大水袋，比壶轻一斗。",
@@ -1231,7 +1231,7 @@
     {
       "id": "sk_feng",
       "name": "风绊",
-      "cardTier": "白铁",
+      "cardTier": "黑铁",
       "formEntry": "技能",
       "element": "风",
       "description": "把人钉原地一拍——风把脚踝绑住。",
@@ -1240,7 +1240,7 @@
     {
       "id": "ld_shalin",
       "name": "沙林小道",
-      "cardTier": "白铁",
+      "cardTier": "黑铁",
       "formEntry": "领域",
       "element": "土",
       "description": "扎营后防风沙的小沙圈，不算领域也算地方。",
@@ -1523,7 +1523,7 @@
     {
       "id": "sk_bushiq",
       "name": "不去想",
-      "cardTier": "白铁",
+      "cardTier": "黑铁",
       "formEntry": "技能",
       "element": "暗",
       "description": "一拍的工夫里把一件不该想的事按下去。代价：打完此拍后，这张卡从此从你的记忆里消失。",
@@ -1559,7 +1559,7 @@
     {
       "id": "eq_eyepatch",
       "name": "辨灰眼罩",
-      "cardTier": "白铁",
+      "cardTier": "黑铁",
       "formEntry": "装备",
       "element": "暗",
       "description": "蒙住左眼的那种。你从此不用再看见底石的细纹——但右眼还会替你流泪。",
@@ -1586,7 +1586,7 @@
     {
       "id": "su_wangzhijing",
       "name": "往之境",
-      "cardTier": "白铁",
+      "cardTier": "黑铁",
       "formEntry": "物资",
       "element": "暗",
       "description": "一块折了多次的纸——写过的字会自动从世界任何地方消失。你在它上面写下对手的真名。",
@@ -1614,7 +1614,7 @@
     {
       "id": "sk_moru",
       "name": "默读",
-      "cardTier": "白铁",
+      "cardTier": "黑铁",
       "formEntry": "技能",
       "element": "暗",
       "description": "不出声地把一行字读进脑子里——读完那行字会从原处消失。",
@@ -1623,7 +1623,7 @@
     {
       "id": "eq_mofa",
       "name": "墨发带",
-      "cardTier": "白铁",
+      "cardTier": "黑铁",
       "formEntry": "装备",
       "element": "暗",
       "description": "束住头发的那截黑布。戴上后写字会工整一点，但写的内容会偏暗。",
@@ -1632,7 +1632,7 @@
     {
       "id": "su_bingjian",
       "name": "冰笺",
-      "cardTier": "白铁",
+      "cardTier": "黑铁",
       "formEntry": "物资",
       "element": "冰",
       "description": "一片冰做的便签，字迹会随着融化慢慢淡去——写的时候要想清楚。",
@@ -1646,7 +1646,7 @@
     {
       "id": "ld_yejing",
       "name": "夜晶小径",
-      "cardTier": "白铁",
+      "cardTier": "黑铁",
       "formEntry": "领域",
       "element": "暗",
       "description": "夜里发亮的一段小路，走的时候最好不要回头看。",
@@ -1732,7 +1732,7 @@
     {
       "id": "jl_lianchen",
       "name": "敛尘匣·零七",
-      "cardTier": "白铁",
+      "cardTier": "黑铁",
       "formEntry": "物资",
       "element": "暗",
       "description": "匣里确实空无一物——但你很快发现了一种用法：把不想看到的账单放进去。账单没有被消掉，但你从此想不起来要看它。你现在有两个世界的问题：匣外的问题和匣内的问题。匣内的那些过得挺好。",
@@ -1746,7 +1746,7 @@
     {
       "id": "sk_guifan",
       "name": "归档式",
-      "cardTier": "白铁",
+      "cardTier": "黑铁",
       "formEntry": "技能",
       "element": "光",
       "description": "你把昨天跟邻居吵架的事按法院口径归了档。格式如下：「某年某月某日，当事人双方因物品边界产生分歧，经口头协商未达成一致。」归完档你读了一遍——突然觉得这事小到不值得吵。归档式不是让你忘了，是让你用第三人称看自己。第三人称会觉得你是个傻子。",
@@ -1755,7 +1755,7 @@
     {
       "id": "eq_shenshi",
       "name": "慎览目镜",
-      "cardTier": "白铁",
+      "cardTier": "黑铁",
       "formEntry": "装备",
       "element": "暗",
       "description": "戴上之后你看什么都不带感情。你用目镜看了一场你最喜欢的电影——完全无感。你摘下来重看了一遍——哭了。你从此学会了在戴与不戴之间切换。这个技能比目镜本身值钱。",
